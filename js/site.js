@@ -50,26 +50,17 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeQuote(); });
   if (modal) modal.addEventListener('click', function (e) { if (e.target === modal.firstElementChild) closeQuote(); });
 
-  // forms — show success state (CRM/GHL integration hooks preserved via data-ghl-field)
-  function wireForm(form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var scope = form.closest('[data-form-body]') ? form.closest('[data-form-body]').parentElement : form.parentElement;
-      var body = scope.querySelector('[data-form-body]');
-      var ok = scope.querySelector('[data-form-success]');
-      if (body) body.hidden = true;
-      if (ok) ok.hidden = false;
-      form.reset();
-    });
-  }
-  document.querySelectorAll('form[data-quote-form], form[data-page-form]').forEach(wireForm);
-  document.querySelectorAll('[data-reset-form]').forEach(function (b) {
-    b.addEventListener('click', function () {
-      var scope = b.closest('[data-form-success]') ? b.closest('[data-form-success]').parentElement : document;
-      var body = scope.querySelector('[data-form-body]');
-      var ok = scope.querySelector('[data-form-success]');
-      if (ok) ok.hidden = true;
-      if (body) body.hidden = false;
+  // Quote forms submit natively (GHL external tracking captures the submit
+  // event and syncs data-ghl-field/name fields to contact fields — do not
+  // preventDefault) and redirect to thank-you.html via the form action.
+  // A sessionStorage copy backs up personalisation on the thank-you page.
+  document.querySelectorAll('form[data-quote-form], form[data-page-form]').forEach(function (form) {
+    form.addEventListener('submit', function () {
+      try {
+        var data = {};
+        new FormData(form).forEach(function (v, k) { data[k] = v; });
+        sessionStorage.setItem('cws_quote', JSON.stringify(data));
+      } catch (e) { /* storage unavailable — thank-you page falls back to URL params */ }
     });
   });
 })();

@@ -40,11 +40,25 @@ client job photos sourced from the CWS Google Drive Photos folder.
 - `img/` — optimised photos (client job photos + approved design imagery)
 - `fonts/` — self-hosted Lato + Playfair Display (woff2)
 
-## Forms
+## Forms (GoHighLevel)
 
-The quote modal and contact form show a front-end success state and carry
-`data-ghl-field` attributes ready for GoHighLevel/CRM wiring. Update the form
-handler in `js/site.js` when the endpoint is available.
+The quote modal and contact form are wired for GHL external form tracking:
+
+- The GHL tracking script (`link.msgsndr.com/js/external-tracking.js`,
+  tracking id `tk_c75c0c68581c413f905aab04b2b973c5`) is loaded in the
+  `<head>` of every page.
+- Every field has a `name` + `data-ghl-field` mapping: `full_name`,
+  `email`, `phone`, `service_needed`, `property_address`,
+  `property_size`, `job_notes` → `contact.*`.
+- Forms submit through the native submit event (nothing calls
+  `preventDefault`), so GHL captures the submission, then the browser
+  follows the form action to `thank-you.html`.
+- `thank-you.html` (noindex, excluded from the sitemap) personalises the
+  greeting and summarises what was submitted from the query string (with a
+  `sessionStorage` fallback), then strips the query from the URL/history.
+
+In the GHL sub-account, enable **Form Analytics** and **Form Submissions**
+in Settings for submissions to sync to contacts.
 
 The canonical domain is set to `https://www.cwslawnandgardencare.com.au` —
 update `BASE` references in the HTML head, `sitemap.xml` and `robots.txt` if
