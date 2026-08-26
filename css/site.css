@@ -281,6 +281,24 @@
 @media (max-width: 720px) {
   h1 { font-size: 44px !important; }
 }
+/* ---- hero on small screens ----
+   The design's hero is sized for a desktop viewport; on a phone the tall
+   min-height, wide paragraph measure and mismatched buttons make it read as
+   clutter. Shrink the box, calm the copy and give the CTAs equal width. */
+@media (max-width: 620px) {
+  .hero { min-height: 0 !important; padding-bottom: 34px !important; }
+  .hero p { font-size: 16px !important; line-height: 1.6 !important; }
+  .hero-cta { gap: 10px !important; }
+  .hero-cta > a, .hero-cta > button {
+    flex: 1 1 100% !important; display: block !important;
+    text-align: center !important; padding-left: 16px !important; padding-right: 16px !important;
+  }
+  .trust-strip {
+    display: grid !important; grid-template-columns: 1fr 1fr !important;
+    gap: 10px 12px !important; justify-content: stretch !important;
+  }
+  .trust-strip > div { font-size: 10px !important; }
+}
 @media (max-width: 480px) {
   h1 { font-size: 36px !important; }
 }
