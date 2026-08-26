@@ -52,7 +52,7 @@
 
   // Quote forms submit natively (GHL external tracking captures the submit
   // event and syncs data-ghl-field/name fields to contact fields — do not
-  // preventDefault) and redirect to thank-you.html via the form action.
+  // preventDefault) and redirect to /thank-you/ via the form action.
   // A sessionStorage copy backs up personalisation on the thank-you page.
   document.querySelectorAll('form[data-quote-form], form[data-page-form]').forEach(function (form) {
     form.addEventListener('submit', function () {

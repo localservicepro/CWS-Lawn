@@ -9,16 +9,24 @@ client job photos sourced from the CWS Google Drive Photos folder.
 
 ## Pages
 
-| Page | File |
-|---|---|
-| Home | `index.html` |
-| Lawn Mowing (Willunga) | `lawn-mowing-willunga.html` |
-| Acreage Mowing (Fleurieu Peninsula) | `acreage-mowing-fleurieu-peninsula.html` |
-| Gardening & Pruning (McLaren Vale) | `gardening-mclaren-vale.html` |
-| Lawn Renovations (Willunga) | `lawn-renovations-willunga.html` |
-| Weed Control & Block Slashing | `weed-control-block-slashing.html` |
-| About | `about.html` |
-| Contact | `contact.html` |
+Clean, extensionless URLs. Each page is written as `<slug>/index.html`, so the
+URL works on any static host without rewrite rules. Service pages are named for
+the service only, with no suburb in the path.
+
+| Page | URL | File |
+|---|---|---|
+| Home | `/` | `index.html` |
+| Lawn Mowing | `/lawn-mowing/` | `lawn-mowing/index.html` |
+| Acreage Mowing | `/acreage-mowing/` | `acreage-mowing/index.html` |
+| Gardening & Pruning | `/gardening-pruning/` | `gardening-pruning/index.html` |
+| Lawn Renovations | `/lawn-renovations/` | `lawn-renovations/index.html` |
+| Weed Control & Block Slashing | `/weed-control-block-slashing/` | `weed-control-block-slashing/index.html` |
+| About | `/about/` | `about/index.html` |
+| Contact | `/contact/` | `contact/index.html` |
+| Thank You (noindex) | `/thank-you/` | `thank-you/index.html` |
+
+Assets and internal links are root-relative (`/css/…`, `/img/…`, `/about/`), so
+the site must be served from the domain root.
 
 ## SEO / GEO / AEO features
 
@@ -52,8 +60,8 @@ The quote modal and contact form are wired for GHL external form tracking:
   `property_size`, `job_notes` → `contact.*`.
 - Forms submit through the native submit event (nothing calls
   `preventDefault`), so GHL captures the submission, then the browser
-  follows the form action to `thank-you.html`.
-- `thank-you.html` (noindex, excluded from the sitemap) personalises the
+  follows the form action to `/thank-you/`.
+- `/thank-you/` (noindex, excluded from the sitemap) personalises the
   greeting and summarises what was submitted from the query string (with a
   `sessionStorage` fallback), then strips the query from the URL/history.
 
