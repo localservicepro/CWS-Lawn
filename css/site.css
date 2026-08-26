@@ -285,6 +285,41 @@
   h1 { font-size: 36px !important; }
 }
 
+/* ---- services dropdown ----
+   Opens on hover on pointer devices (JS toggles `open`); the panel's ::before
+   bridges the gap below the summary so the pointer never leaves the details
+   subtree on the way down. Click/tap still works for touch and keyboard. */
+nav details[data-services] > div::before {
+  content: ""; position: absolute; left: 0; right: 0; top: -20px; height: 20px;
+}
+nav details[data-services] > summary { cursor: pointer; }
+
+/* ---- quote modal ----
+   Never taller or wider than the viewport: the panel caps its height and
+   scrolls internally instead of pushing the page. */
+.modal-overlay { align-items: center !important; padding: clamp(10px, 2.5vw, 40px) !important; }
+.modal-panel {
+  max-width: min(640px, 100%) !important;
+  max-height: calc(100vh - clamp(20px, 5vw, 80px));
+  max-height: calc(100dvh - clamp(20px, 5vw, 80px));
+  overflow-y: auto; overscroll-behavior: contain;
+  padding: clamp(20px, 3vw, 36px) !important;
+}
+@media (max-width: 760px) {
+  /* compact the form so it fits a phone without endless scrolling, and keep
+     inputs at 16px so iOS does not zoom the page on focus */
+  #quote-modal p { font-size: 14px !important; }
+  #quote-modal form { gap: 13px !important; }
+  #quote-modal input, #quote-modal select, #quote-modal textarea {
+    font-size: 16px !important; padding: 12px 13px !important;
+  }
+  #quote-modal textarea { height: 76px !important; }
+  #quote-modal label { font-size: 11px !important; }
+  #quote-modal button[type="submit"] { padding: 15px 22px !important; }
+}
+@media (max-height: 560px) {
+  #quote-modal textarea { height: 60px !important; }
+}
 #quote-modal[hidden] { display: none; }
 [data-form-success][hidden] { display: none; }
 html { scroll-behavior: smooth; }
@@ -316,8 +351,8 @@ img { height: auto; }
   /* maps and embeds */
   iframe { height: 300px !important; }
   /* keep the modal usable on a short screen */
-  #quote-modal > div { padding: 20px 12px !important; }
-  #quote-modal > div > div { padding: 26px 20px !important; }
+  .modal-overlay { padding: 12px !important; }
+  .modal-panel { padding: 22px 18px !important; }
 }
 @media (max-width: 420px) {
   [style*="padding: 0 28px"] { padding-left: 16px !important; padding-right: 16px !important; }

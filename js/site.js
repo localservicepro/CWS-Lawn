@@ -41,6 +41,41 @@
     });
   }
 
+  // services dropdown: hover on pointer devices, click/tap elsewhere
+  var hoverMQ = window.matchMedia('(hover: hover) and (min-width: 1081px)');
+  document.querySelectorAll('nav details[data-services]').forEach(function (d) {
+    var timer;
+    d.addEventListener('mouseenter', function () {
+      if (!hoverMQ.matches) return;
+      clearTimeout(timer);
+      d.open = true;
+    });
+    d.addEventListener('mouseleave', function () {
+      if (!hoverMQ.matches) return;
+      clearTimeout(timer);
+      timer = setTimeout(function () { d.open = false; }, 160);
+    });
+    var summary = d.querySelector('summary');
+    if (summary) {
+      summary.addEventListener('click', function (e) {
+        // hover already drives it on desktop; e.detail === 0 means keyboard
+        if (hoverMQ.matches && e.detail > 0) e.preventDefault();
+      });
+    }
+    d.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { d.open = false; });
+    });
+  });
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('nav details[open]').forEach(function (d) {
+      if (!d.contains(e.target)) d.open = false;
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    document.querySelectorAll('nav details[open]').forEach(function (d) { d.open = false; });
+  });
+
   // quote modal
   var modal = document.getElementById('quote-modal');
   function openQuote(e) { if (e) e.preventDefault(); if (modal) { modal.hidden = false; document.body.style.overflow = 'hidden'; } }
