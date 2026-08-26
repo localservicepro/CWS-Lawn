@@ -54,11 +54,14 @@
       <a href="contact.html" style="color: #f0ede6; font-size: 13px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; cursor: pointer;" style-hover="color:#8aaa78;">Contact</a>
       <button type="button" data-open-quote style="background: #8aaa78; color: #16210f; border: none; padding: 13px 26px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.4px; text-transform: uppercase; cursor: pointer;" style-hover="background:#9cba8b;">Get a Quote</button>
     </div>
-    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+    <div class="nav-mobile-actions">
+      <button type="button" data-open-quote class="nav-cta">Quote</button>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+    </div>
   </div>
 </nav>
 <main>
-  <section style="position: relative; padding: 200px 0 110px; overflow: hidden;">
+  <section style="position: relative; padding: clamp(104px, 16.13vw, 200px) 0 clamp(46px, 8.87vw, 110px); overflow: hidden;">
     <img src="img/weed-vegetation.webp" alt="Weed control and block slashing Fleurieu Peninsula" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" width="1440" height="1440" fetchpriority="high">
     <div style="position: absolute; inset: 0; background: linear-gradient(100deg, rgba(26,36,23,0.96) 0%, rgba(26,36,23,0.82) 50%, rgba(26,36,23,0.4) 100%);"></div>
     <div style="position: relative; z-index: 2; max-width: 1240px; margin: 0 auto; padding: 0 28px;">
@@ -71,11 +74,11 @@
       </div>
       <div style="max-width: 860px;">
         <div style="display: inline-block; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 9px 20px; border-radius: 999px; font-size: 11px; font-weight: 900; letter-spacing: 2.4px; margin-bottom: 30px;">ALL SERVICES • WEED CONTROL &amp; BLOCK SLASHING</div>
-        <h1 style="font-family: 'Playfair Display', serif; font-size: 68px; line-height: 1.07; font-weight: 700; color: #fff; margin: 0 0 28px; letter-spacing: -1.4px;"><em style="color: #8aaa78; font-weight: 600;">Weed Control &amp;</em> Block Slashing Fleurieu Peninsula</h1>
-        <p style="font-size: 20px; line-height: 1.7; color: rgba(255,255,255,0.82); margin: 0 0 44px; max-width: 700px; text-wrap: pretty;">Professional weed control and block slashing for lawns, gardens, rural blocks, and vacant land across the Fleurieu Peninsula — eliminating weeds at the source and keeping properties compliant and clear.</p>
+        <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 5.48vw, 68px); line-height: 1.07; font-weight: 700; color: #fff; margin: 0 0 28px; letter-spacing: -1.4px;"><em style="color: #8aaa78; font-weight: 600;">Weed Control &amp;</em> Block Slashing Fleurieu Peninsula</h1>
+        <p style="font-size: clamp(17px, 1.61vw, 20px); line-height: 1.7; color: rgba(255,255,255,0.82); margin: 0 0 clamp(18px, 3.55vw, 44px); max-width: 700px; text-wrap: pretty;">Professional weed control and block slashing for lawns, gardens, rural blocks, and vacant land across the Fleurieu Peninsula — eliminating weeds at the source and keeping properties compliant and clear.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 52px;">
-          <button type="button" data-open-quote style="background: #8aaa78; color: #16210f; border: none; padding: 20px 40px; border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:#9cba8b;">Get a Free Quote</button>
-          <a href="#wc-details" style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.24); padding: 20px 40px; border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase;" style-hover="background:rgba(255,255,255,0.2); color:#fff;">Learn More</a>
+          <button type="button" data-open-quote style="background: #8aaa78; color: #16210f; border: none; padding: 20px clamp(17px, 3.23vw, 40px); border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:#9cba8b;">Get a Free Quote</button>
+          <a href="#wc-details" style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.24); padding: 20px clamp(17px, 3.23vw, 40px); border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase;" style-hover="background:rgba(255,255,255,0.2); color:#fff;">Learn More</a>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 12px;">
           <span style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); padding: 11px 20px; border-radius: 999px; color: rgba(255,255,255,0.88); font-size: 13px; font-weight: 700;"><span style="width: 5px; height: 5px; border-radius: 50%; background: #8aaa78;"></span>Selective Lawn Weed Control</span>
@@ -87,33 +90,33 @@
     </div>
   </section>
 
-  <section id="wc-details" style="padding: 130px 0; background: #faf9f6;">
-    <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 80px; align-items: center;">
+  <section id="wc-details" style="padding: clamp(55px, 10.48vw, 130px) 0; background: #faf9f6;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(36px, 6.45vw, 80px); align-items: center;">
       <div>
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">The Service</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 46px; line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 28px; letter-spacing: -0.8px;">Weed Control &amp; Block Slashing on the Fleurieu Peninsula</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.71vw, 46px); line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 28px; letter-spacing: -0.8px;">Weed Control &amp; Block Slashing on the Fleurieu Peninsula</h2>
         <div style="display: flex; flex-direction: column; gap: 20px; font-size: 17px; line-height: 1.78; color: #5c6355; text-wrap: pretty;">
           <p style="margin: 0;"><strong style="color: #1a2417;">Weed control and block slashing on the Fleurieu Peninsula</strong> covers two distinct but often related services — targeted herbicide treatment to eliminate lawn and garden weeds, and mechanical slashing of overgrown blocks, paddocks, and vacant land. CWS Lawn and Garden Care provides both across Willunga, McLaren Vale, Aldinga, Mount Compass, and the wider Fleurieu Peninsula.</p>
           <p style="margin: 0;">Weed pressure on the Fleurieu Peninsula is year-round — winter rains bring bindii and broadleaf weeds into lawns, spring accelerates invasive grass species, and summer leaves dry, overgrown blocks at fire risk. CWS uses selective herbicide programs matched precisely to your grass type and weed species, ensuring effective elimination without damaging the surrounding turf or garden.</p>
           <p style="margin: 0;">For block slashing, we deploy commercial-grade slashers and ride-on equipment suited to <strong style="color: #1a2417;">large vacant blocks, rural land, and properties requiring fire season compliance</strong> across the Fleurieu Peninsula — the same equipment used in our acreage mowing service, applied specifically to the clearance of overgrown and non-maintained land.</p>
         </div>
-        <button type="button" data-open-quote style="margin-top: 38px; background: #3d5c38; color: #fff; border: none; padding: 19px 38px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:#4a6d44;">Get a Free Quote</button>
+        <button type="button" data-open-quote style="margin-top: 38px; background: #3d5c38; color: #fff; border: none; padding: 19px clamp(16px, 3.06vw, 38px); border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:#4a6d44;">Get a Free Quote</button>
       </div>
       <div><img src="img/weed-control.jpg" alt="Weed control and block slashing Fleurieu Peninsula" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 6px;" width="1080" height="600" loading="lazy" decoding="async"></div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-      <div style="max-width: 780px; margin: 0 auto 68px; text-align: center;">
+      <div style="max-width: 780px; margin: 0 auto clamp(29px, 5.48vw, 68px); text-align: center;">
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">Two Services, One Team</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 48px; line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">What's Included in Weed Control &amp; Block Slashing</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.87vw, 48px); line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">What's Included in Weed Control &amp; Block Slashing</h2>
         <p style="font-size: 18px; line-height: 1.7; color: #5c6355; margin: 0;">CWS handles both targeted chemical weed control and mechanical block slashing — fully matched to your property type and the specific weed or vegetation challenge you're facing.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 28px;">
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 42px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 28px;">
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(18px, 3.39vw, 42px);">
           <div style="padding-bottom: 26px; border-bottom: 1px solid #e2ded2; margin-bottom: 30px;">
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #1a2417; margin: 0 0 6px;">Weed Control</h3>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 2.26vw, 28px); font-weight: 700; color: #1a2417; margin: 0 0 6px;">Weed Control</h3>
             <p style="font-size: 14px; color: #5c6355; margin: 0;">Targeted herbicide treatments for lawns &amp; gardens</p>
           </div>
           <div style="display: flex; flex-direction: column; gap: 24px;">
@@ -135,9 +138,9 @@
             </div>
           </div>
         </div>
-        <div style="background: #2a3e26; border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 42px; color: #fff;">
+        <div style="background: #2a3e26; border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: clamp(18px, 3.39vw, 42px); color: #fff;">
           <div style="padding-bottom: 26px; border-bottom: 1px solid rgba(255,255,255,0.12); margin-bottom: 30px;">
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; margin: 0 0 6px;">Block Slashing</h3>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 2.26vw, 28px); font-weight: 700; margin: 0 0 6px;">Block Slashing</h3>
             <p style="font-size: 14px; color: rgba(255,255,255,0.6); margin: 0;">Mechanical clearance for overgrown blocks &amp; rural land</p>
           </div>
           <div style="display: flex; flex-direction: column; gap: 24px;">
@@ -163,85 +166,85 @@
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #2a3e26;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #2a3e26;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-      <div style="max-width: 800px; margin: 0 auto 64px; text-align: center;">
+      <div style="max-width: 800px; margin: 0 auto clamp(27px, 5.16vw, 64px); text-align: center;">
         <div style="color: #8aaa78; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">Weed Guide</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 46px; line-height: 1.12; font-weight: 700; color: #fff; margin: 0 0 22px; letter-spacing: -0.8px;">Common Weeds CWS Treats Across the Fleurieu Peninsula</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.71vw, 46px); line-height: 1.12; font-weight: 700; color: #fff; margin: 0 0 22px; letter-spacing: -0.8px;">Common Weeds CWS Treats Across the Fleurieu Peninsula</h2>
         <p style="font-size: 18px; line-height: 1.72; color: rgba(255,255,255,0.75); margin: 0;">Identifying the right weed — and matching the right treatment to your grass type — is what separates effective weed control from a wasted application. Here are the most common species CWS treats across Willunga, McLaren Vale, and the Fleurieu Peninsula.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); gap: 18px;">
         <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 28px; display: flex; flex-direction: column;">
           <span style="align-self: flex-start; background: rgba(138,170,120,0.16); color: #8aaa78; font-size: 9px; font-weight: 900; letter-spacing: 1.8px; padding: 5px 10px; border-radius: 3px; margin-bottom: 14px;">LAWN WEED</span>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #fff; margin: 0 0 4px;">Bindii</h3>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #fff; margin: 0 0 4px;">Bindii</h3>
           <div style="font-size: 12px; color: rgba(255,255,255,0.4); font-style: italic; margin-bottom: 18px;">Soliva sessilis</div>
           <p style="font-size: 14px; line-height: 1.72; color: rgba(255,255,255,0.7); margin: 0 0 22px; flex: 1;">The most painful weed on Fleurieu Peninsula lawns — small, flat rosettes with spiny seed heads that develop from winter through spring. Most effective when treated before flowering in late July to August.</p>
           <div style="font-size: 12px; font-weight: 700; color: #8aaa78; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px;">Selective broadleaf herbicide — Buffalo safe</div>
         </div>
         <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 28px; display: flex; flex-direction: column;">
           <span style="align-self: flex-start; background: rgba(138,170,120,0.16); color: #8aaa78; font-size: 9px; font-weight: 900; letter-spacing: 1.8px; padding: 5px 10px; border-radius: 3px; margin-bottom: 14px;">BROADLEAF WEED</span>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #fff; margin: 0 0 4px;">Cape Weed</h3>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #fff; margin: 0 0 4px;">Cape Weed</h3>
           <div style="font-size: 12px; color: rgba(255,255,255,0.4); font-style: italic; margin-bottom: 18px;">Arctotheca calendula</div>
           <p style="font-size: 14px; line-height: 1.72; color: rgba(255,255,255,0.7); margin: 0 0 22px; flex: 1;">Dominant in Willunga and McLaren Vale lawns and paddocks through winter and spring — forms dense mats that smother turf and pasture. A declared pest plant in South Australia requiring active management.</p>
           <div style="font-size: 12px; font-weight: 700; color: #8aaa78; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px;">Selective or non-selective herbicide depending on site</div>
         </div>
         <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 28px; display: flex; flex-direction: column;">
           <span style="align-self: flex-start; background: rgba(138,170,120,0.16); color: #8aaa78; font-size: 9px; font-weight: 900; letter-spacing: 1.8px; padding: 5px 10px; border-radius: 3px; margin-bottom: 14px;">LAWN WEED</span>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #fff; margin: 0 0 4px;">Winter Grass</h3>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #fff; margin: 0 0 4px;">Winter Grass</h3>
           <div style="font-size: 12px; color: rgba(255,255,255,0.4); font-style: italic; margin-bottom: 18px;">Poa annua</div>
           <p style="font-size: 14px; line-height: 1.72; color: rgba(255,255,255,0.7); margin: 0 0 22px; flex: 1;">Light green tufts appearing in lawns through autumn and winter — particularly visible in Buffalo and Couch lawns across Willunga. Germinates prolifically in cool, moist conditions and seeds before most homeowners notice it.</p>
           <div style="font-size: 12px; font-weight: 700; color: #8aaa78; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px;">Pre-emergent herbicide in autumn + post-emergent treatment</div>
         </div>
         <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 28px; display: flex; flex-direction: column;">
           <span style="align-self: flex-start; background: rgba(138,170,120,0.16); color: #8aaa78; font-size: 9px; font-weight: 900; letter-spacing: 1.8px; padding: 5px 10px; border-radius: 3px; margin-bottom: 14px;">BROADLEAF WEED</span>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #fff; margin: 0 0 4px;">Clover</h3>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #fff; margin: 0 0 4px;">Clover</h3>
           <div style="font-size: 12px; color: rgba(255,255,255,0.4); font-style: italic; margin-bottom: 18px;">Trifolium spp.</div>
           <p style="font-size: 14px; line-height: 1.72; color: rgba(255,255,255,0.7); margin: 0 0 22px; flex: 1;">Clover spreads rapidly through Fleurieu Peninsula lawns during spring — visible as three-leafed rosettes and white flowers that attract bees. Indicates low lawn nitrogen — weed control combined with fertilising prevents rapid recurrence.</p>
           <div style="font-size: 12px; font-weight: 700; color: #8aaa78; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px;">Selective broadleaf herbicide + post-treatment fertilising</div>
         </div>
         <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 28px; display: flex; flex-direction: column;">
           <span style="align-self: flex-start; background: rgba(138,170,120,0.16); color: #8aaa78; font-size: 9px; font-weight: 900; letter-spacing: 1.8px; padding: 5px 10px; border-radius: 3px; margin-bottom: 14px;">INVASIVE SPECIES</span>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #fff; margin: 0 0 4px;">Paspalum</h3>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #fff; margin: 0 0 4px;">Paspalum</h3>
           <div style="font-size: 12px; color: rgba(255,255,255,0.4); font-style: italic; margin-bottom: 18px;">Paspalum dilatatum</div>
           <p style="font-size: 14px; line-height: 1.72; color: rgba(255,255,255,0.7); margin: 0 0 22px; flex: 1;">A coarse, clumping grass weed common in Willunga and McLaren Vale lawns — particularly visible in Buffalo and Couch turf. Spreads through seed heads and rhizomes, becoming increasingly difficult to control once established.</p>
           <div style="font-size: 12px; font-weight: 700; color: #8aaa78; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px;">Spot treatment with selective or translocating herbicide</div>
         </div>
         <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 28px; display: flex; flex-direction: column;">
           <span style="align-self: flex-start; background: rgba(138,170,120,0.16); color: #8aaa78; font-size: 9px; font-weight: 900; letter-spacing: 1.8px; padding: 5px 10px; border-radius: 3px; margin-bottom: 14px;">BROADLEAF WEED</span>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #fff; margin: 0 0 4px;">Dandelion</h3>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #fff; margin: 0 0 4px;">Dandelion</h3>
           <div style="font-size: 12px; color: rgba(255,255,255,0.4); font-style: italic; margin-bottom: 18px;">Taraxacum officinale</div>
           <p style="font-size: 14px; line-height: 1.72; color: rgba(255,255,255,0.7); margin: 0 0 22px; flex: 1;">Deep-rooted broadleaf weed appearing year-round in Fleurieu Peninsula lawns and garden beds. Requires herbicide treatment that translocates fully to the taproot — surface chemical treatment causes rapid regrowth from root fragments left in Willunga's clay soils.</p>
           <div style="font-size: 12px; font-weight: 700; color: #8aaa78; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px;">Selective broadleaf herbicide — one or two applications</div>
         </div>
         <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 28px; display: flex; flex-direction: column;">
           <span style="align-self: flex-start; background: rgba(138,170,120,0.16); color: #8aaa78; font-size: 9px; font-weight: 900; letter-spacing: 1.8px; padding: 5px 10px; border-radius: 3px; margin-bottom: 14px;">FIRE RISK WEED</span>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #fff; margin: 0 0 4px;">Wild Oats</h3>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #fff; margin: 0 0 4px;">Wild Oats</h3>
           <div style="font-size: 12px; color: rgba(255,255,255,0.4); font-style: italic; margin-bottom: 18px;">Avena fatua</div>
           <p style="font-size: 14px; line-height: 1.72; color: rgba(255,255,255,0.7); margin: 0 0 22px; flex: 1;">Tall, fast-growing annual grass common on rural Fleurieu Peninsula blocks through spring. Dries to a highly flammable standing fuel load by November — a significant fire risk on unmanaged lifestyle blocks and vacant land around Willunga and Mount Compass.</p>
           <div style="font-size: 12px; font-weight: 700; color: #8aaa78; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px;">Block slashing before drying + selective grass herbicide</div>
         </div>
         <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 28px; display: flex; flex-direction: column;">
           <span style="align-self: flex-start; background: rgba(138,170,120,0.16); color: #8aaa78; font-size: 9px; font-weight: 900; letter-spacing: 1.8px; padding: 5px 10px; border-radius: 3px; margin-bottom: 14px;">FIRE RISK WEED</span>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #fff; margin: 0 0 4px;">Thistles</h3>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #fff; margin: 0 0 4px;">Thistles</h3>
           <div style="font-size: 12px; color: rgba(255,255,255,0.4); font-style: italic; margin-bottom: 18px;">Cirsium &amp; Carduus spp.</div>
           <p style="font-size: 14px; line-height: 1.72; color: rgba(255,255,255,0.7); margin: 0 0 22px; flex: 1;">Multiple thistle species are widespread across Fleurieu Peninsula rural properties — Scotch thistle, variegated thistle, and saffron thistle are all notifiable weeds in SA. CWS treats thistles using targeted herbicide in the rosette stage for most effective control.</p>
           <div style="font-size: 12px; font-weight: 700; color: #8aaa78; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px;">Selective herbicide at rosette stage — SA notifiable weeds</div>
         </div>
       </div>
-      <p style="text-align: center; margin: 44px 0 0; color: rgba(255,255,255,0.6); font-size: 15px;">Not sure which weed is affecting your lawn or property? <span type="button" data-open-quote style="color: #8aaa78; font-weight: 700; cursor: pointer; text-decoration: underline;">Get a free quote from CWS</span> — we'll identify it and recommend the right treatment at no obligation.</p>
+      <p style="text-align: center; margin: clamp(18px, 3.55vw, 44px) 0 0; color: rgba(255,255,255,0.6); font-size: 15px;">Not sure which weed is affecting your lawn or property? <span type="button" data-open-quote style="color: #8aaa78; font-weight: 700; cursor: pointer; text-decoration: underline;">Get a free quote from CWS</span> — we'll identify it and recommend the right treatment at no obligation.</p>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #faf9f6;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #faf9f6;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-      <div style="max-width: 780px; margin: 0 auto 64px; text-align: center;">
+      <div style="max-width: 780px; margin: 0 auto clamp(27px, 5.16vw, 64px); text-align: center;">
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">Property Compliance</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 48px; line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Fleurieu Peninsula Property Compliance Checklist</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.87vw, 48px); line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Fleurieu Peninsula Property Compliance Checklist</h2>
         <p style="font-size: 18px; line-height: 1.7; color: #5c6355; margin: 0;">Rural, lifestyle, and vacant land owners on the Fleurieu Peninsula have annual weed and fire management obligations. CWS helps you meet every one of them.</p>
       </div>
-      <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 28px;">
-        <div style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 42px;">
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; color: #1a2417; margin: 0 0 30px;">Fire Season Requirements</h3>
+      <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 28px;">
+        <div style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(18px, 3.39vw, 42px);">
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(22px, 2.1vw, 26px); font-weight: 700; color: #1a2417; margin: 0 0 30px;">Fire Season Requirements</h3>
           <div style="display: flex; flex-direction: column; gap: 24px;">
             <div>
               <h4 style="font-size: 16px; font-weight: 700; color: #1a2417; margin: 0 0 6px;">Grass Cut to 10cm or Below</h4>
@@ -261,8 +264,8 @@
             </div>
           </div>
         </div>
-        <div style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 42px;">
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; color: #1a2417; margin: 0 0 30px;">Weed Management Obligations</h3>
+        <div style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(18px, 3.39vw, 42px);">
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(22px, 2.1vw, 26px); font-weight: 700; color: #1a2417; margin: 0 0 30px;">Weed Management Obligations</h3>
           <div style="display: flex; flex-direction: column; gap: 24px;">
             <div>
               <h4 style="font-size: 16px; font-weight: 700; color: #1a2417; margin: 0 0 6px;">Declared Weeds Must Be Controlled</h4>
@@ -283,182 +286,182 @@
           </div>
         </div>
       </div>
-      <div style="max-width: 1100px; margin: 32px auto 0; background: #3d5c38; border-radius: 6px; padding: 48px; text-align: center;">
+      <div style="max-width: 1100px; margin: 32px auto 0; background: #3d5c38; border-radius: 6px; padding: clamp(20px, 3.87vw, 48px); text-align: center;">
         <p style="font-size: 18px; line-height: 1.7; font-weight: 700; color: #fff; margin: 0 0 30px;">CWS handles your Fleurieu Peninsula weed and fire compliance obligations — so you don't have to track them yourself. Call us before fire season to book your block slashing program.</p>
-        <button type="button" data-open-quote style="background: #fff; color: #3d5c38; border: none; padding: 19px 40px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:#8aaa78; color:#16210f;">Get a Free Quote</button>
+        <button type="button" data-open-quote style="background: #fff; color: #3d5c38; border: none; padding: 19px clamp(17px, 3.23vw, 40px); border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:#8aaa78; color:#16210f;">Get a Free Quote</button>
       </div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-      <div style="max-width: 760px; margin: 0 auto 68px; text-align: center;">
+      <div style="max-width: 760px; margin: 0 auto clamp(29px, 5.48vw, 68px); text-align: center;">
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">Signs to Watch For</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 46px; line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Signs Your Property Needs Weed Control or Block Slashing</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.71vw, 46px); line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Signs Your Property Needs Weed Control or Block Slashing</h2>
         <p style="font-size: 18px; line-height: 1.7; color: #5c6355; margin: 0;">Fleurieu Peninsula properties face distinct weed and vegetation pressure throughout the year — here's when to act.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 24px;">
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">01</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Weeds Spreading Faster Than Mowing</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: 24px;">
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <div style="font-family: 'Playfair Display', serif; font-size: clamp(21px, 3.06vw, 38px); font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">01</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Weeds Spreading Faster Than Mowing</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">When weeds like bindii, clover, and cape weed keep returning despite regular mowing, mowing alone isn't addressing the problem — it's spreading the seed. Targeted weed control treatments break the cycle at the root and seed stage, preventing re-establishment season after season.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">02</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Approaching Fire Danger Season</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <div style="font-family: 'Playfair Display', serif; font-size: clamp(21px, 3.06vw, 38px); font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">02</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Approaching Fire Danger Season</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">If your Fleurieu Peninsula property has long grass or dry standing vegetation heading into October, block slashing is urgent. Fire season compliance notices from council carry fines — and CWS books up quickly in September. Book your pre-fire slashing before the season, not after.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">03</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Bindii Causing Pain Underfoot</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <div style="font-family: 'Playfair Display', serif; font-size: clamp(21px, 3.06vw, 38px); font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">03</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Bindii Causing Pain Underfoot</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">If bindii spines are appearing in your lawn through spring, the weed has already set seed for next year. Treat now to kill existing plants and prevent the seed bank from building further — the most cost-effective time for bindii control is July to August before seed development.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">04</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Vacant Block Becoming Unmanageable</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <div style="font-family: 'Playfair Display', serif; font-size: clamp(21px, 3.06vw, 38px); font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">04</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Vacant Block Becoming Unmanageable</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">A vacant block left unattended through winter and spring on the Fleurieu Peninsula can develop a dense vegetation cover in a single season. CWS block slashing restores it to a manageable state in a single visit — and scheduled follow-up visits prevent it from returning to that state.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">05</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Thistles or Cape Weed Spreading</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <div style="font-family: 'Playfair Display', serif; font-size: clamp(21px, 3.06vw, 38px); font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">05</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Thistles or Cape Weed Spreading</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Thistle and cape weed infestations on Fleurieu Peninsula rural properties worsen rapidly if not treated in the rosette stage — both are declared weeds in SA with legal management obligations. CWS treats these at the most effective growth stage for maximum kill rate and minimum re-seeding.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">06</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Property Going on the Market</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <div style="font-family: 'Playfair Display', serif; font-size: clamp(21px, 3.06vw, 38px); font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">06</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Property Going on the Market</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">A block or rural property with visible weed infestations or overgrown vegetation creates a poor first impression at sale. Professional weed control and block slashing before listing demonstrates managed, compliant land — particularly important for lifestyle and rural property buyers on the Fleurieu Peninsula.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #faf9f6;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #faf9f6;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-      <div style="max-width: 760px; margin: 0 auto 72px; text-align: center;">
+      <div style="max-width: 760px; margin: 0 auto clamp(30px, 5.81vw, 72px); text-align: center;">
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">How It Works</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 44px; line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Our Weed Control &amp; Block Slashing Process</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(23px, 3.55vw, 44px); line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Our Weed Control &amp; Block Slashing Process</h2>
         <p style="font-size: 18px; line-height: 1.7; color: #5c6355; margin: 0;">Four steps from enquiry to a weed-free, compliant, cleared Fleurieu Peninsula property.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: clamp(18px, 3.23vw, 40px);">
         <div>
-          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 26px;">01</div>
+          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; margin-bottom: 26px;">01</div>
           <div style="color: #8aaa78; font-size: 11px; font-weight: 900; letter-spacing: 2.4px; text-transform: uppercase; margin-bottom: 10px;">Step 01</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Free Quote Request</h3>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Free Quote Request</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Call 0402 559 065 or submit the quote form. Tell us your property location, the weed type or block size, and what outcome you need — compliance, lawn improvement, or clearance.</p>
         </div>
         <div>
-          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 26px;">02</div>
+          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; margin-bottom: 26px;">02</div>
           <div style="color: #8aaa78; font-size: 11px; font-weight: 900; letter-spacing: 2.4px; text-transform: uppercase; margin-bottom: 10px;">Step 02</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Property Assessment</h3>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Property Assessment</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">We visit your Fleurieu Peninsula property to identify weed species, assess weed pressure or vegetation density, confirm grass type for weed control, and determine the right treatment or slashing approach.</p>
         </div>
         <div>
-          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 26px;">03</div>
+          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; margin-bottom: 26px;">03</div>
           <div style="color: #8aaa78; font-size: 11px; font-weight: 900; letter-spacing: 2.4px; text-transform: uppercase; margin-bottom: 10px;">Step 03</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Treatment or Slashing</h3>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Treatment or Slashing</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">We carry out the agreed service — targeted weed control at optimal seasonal timing, or block slashing using commercial equipment matched to your block size and vegetation type. Fixed price, no hidden extras.</p>
         </div>
         <div>
-          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 26px;">04</div>
+          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; margin-bottom: 26px;">04</div>
           <div style="color: #8aaa78; font-size: 11px; font-weight: 900; letter-spacing: 2.4px; text-transform: uppercase; margin-bottom: 10px;">Step 04</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Seasonal Follow-Up Program</h3>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Seasonal Follow-Up Program</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Effective weed control and block management requires more than one visit. CWS schedules follow-up treatments and slashing visits throughout the year to keep your property weed-free and compliant through every season.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
-    <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 72px; align-items: start;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(32px, 5.81vw, 72px); align-items: start;">
       <div>
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">Why Choose CWS</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 44px; line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 44px; letter-spacing: -0.8px;">Why Choose CWS for Weed Control &amp; Block Slashing</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(23px, 3.55vw, 44px); line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 clamp(18px, 3.55vw, 44px); letter-spacing: -0.8px;">Why Choose CWS for Weed Control &amp; Block Slashing</h2>
         <div style="display: flex; flex-direction: column; gap: 32px;">
           <div style="display: flex; gap: 22px;">
-            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: 22px; color: #8aaa78; font-weight: 700; width: 34px;">01</span>
+            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); color: #8aaa78; font-weight: 700; width: 34px;">01</span>
             <div>
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 10px;">Correct Identification Before Treatment</h3>
+              <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 10px;">Correct Identification Before Treatment</h3>
               <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Using the wrong herbicide on the wrong weed — or applying a non-selective weed killer to a Buffalo lawn — causes turf damage and wasted spend. CWS identifies every weed species before selecting a treatment, ensuring the right product at the right timing, every time across the Fleurieu Peninsula.</p>
             </div>
           </div>
           <div style="display: flex; gap: 22px;">
-            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: 22px; color: #8aaa78; font-weight: 700; width: 34px;">02</span>
+            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); color: #8aaa78; font-weight: 700; width: 34px;">02</span>
             <div>
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 10px;">Fire Season Compliance Expertise</h3>
+              <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 10px;">Fire Season Compliance Expertise</h3>
               <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">We understand the specific council requirements for block slashing on the Fleurieu Peninsula — Mount Barker District, Alexandrina Council, and surrounding local government areas. CWS helps you achieve and maintain compliance without having to track the requirements yourself.</p>
             </div>
           </div>
           <div style="display: flex; gap: 22px;">
-            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: 22px; color: #8aaa78; font-weight: 700; width: 34px;">03</span>
+            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); color: #8aaa78; font-weight: 700; width: 34px;">03</span>
             <div>
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 10px;">Seasonal Programs, Not Single Visits</h3>
+              <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 10px;">Seasonal Programs, Not Single Visits</h3>
               <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">A single weed spray doesn't solve a weed problem — it delays it. CWS builds annual treatment schedules around the Fleurieu Peninsula's seasonal weed germination windows, treating each species at the point of maximum vulnerability to achieve lasting, cost-effective control.</p>
             </div>
           </div>
           <div style="display: flex; gap: 22px;">
-            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: 22px; color: #8aaa78; font-weight: 700; width: 34px;">04</span>
+            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); color: #8aaa78; font-weight: 700; width: 34px;">04</span>
             <div>
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 10px;">Fully Insured &amp; Licensed</h3>
+              <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 10px;">Fully Insured &amp; Licensed</h3>
               <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">All CWS herbicide applications are carried out with appropriate product handling and full public liability insurance. Your property, neighbouring land, and our team are fully covered on every weed control and block slashing visit across the Fleurieu Peninsula.</p>
             </div>
           </div>
         </div>
       </div>
-      <div style="background: #2a3e26; border-radius: 6px; padding: 56px 48px; color: #fff;">
-        <h3 style="font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 700; margin: 0 0 40px;">CWS Weed Control at a Glance</h3>
+      <div style="background: #2a3e26; border-radius: 6px; padding: clamp(24px, 4.52vw, 56px) clamp(20px, 3.87vw, 48px); color: #fff;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 2.42vw, 30px); font-weight: 700; margin: 0 0 clamp(17px, 3.23vw, 40px);">CWS Weed Control at a Glance</h3>
         <div style="display: flex; flex-direction: column; gap: 26px;">
           <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 18px;"><span style="color: rgba(255,255,255,0.7); font-size: 16px;">Weed Types Treated</span><span style="font-size: 15px; font-weight: 700; text-align: right;">Lawn, Broadleaf, Invasive, Fire-Risk</span></div>
           <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 18px;"><span style="color: rgba(255,255,255,0.7); font-size: 16px;">Slashing Equipment</span><span style="font-size: 16px; font-weight: 700; text-align: right;">Commercial Grade</span></div>
           <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 18px;"><span style="color: rgba(255,255,255,0.7); font-size: 16px;">Compliance</span><span style="font-size: 15px; font-weight: 700; text-align: right;">Fire Season &amp; Council Requirements</span></div>
           <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 18px;"><span style="color: rgba(255,255,255,0.7); font-size: 16px;">Coverage</span><span style="font-size: 16px; font-weight: 700; text-align: right;">Fleurieu Peninsula Wide</span></div>
-          <div style="display: flex; justify-content: space-between; align-items: flex-end;"><span style="color: rgba(255,255,255,0.7); font-size: 16px;">Quote</span><span style="font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 700; font-style: italic; color: #8aaa78; line-height: 1;">Free</span></div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-end;"><span style="color: rgba(255,255,255,0.7); font-size: 16px;">Quote</span><span style="font-family: 'Playfair Display', serif; font-size: clamp(20px, 2.74vw, 34px); font-weight: 700; font-style: italic; color: #8aaa78; line-height: 1;">Free</span></div>
         </div>
         <button type="button" data-open-quote style="margin-top: 44px; width: 100%; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.22); color: #fff; padding: 19px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:rgba(255,255,255,0.2);">Get a Free Quote</button>
       </div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #faf9f6;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #faf9f6;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-      <div style="max-width: 780px; margin: 0 0 64px;">
+      <div style="max-width: 780px; margin: 0 0 clamp(27px, 5.16vw, 64px);">
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">Recent Projects</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 44px; line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Recent Weed Control &amp; Block Slashing Across the Fleurieu Peninsula</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(23px, 3.55vw, 44px); line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Recent Weed Control &amp; Block Slashing Across the Fleurieu Peninsula</h2>
         <p style="font-size: 18px; line-height: 1.7; color: #5c6355; margin: 0;">From bindii and broadleaf weed programs in Willunga lawns to fire-season block slashing on rural Fleurieu Peninsula properties — here's a look at the weed control and clearance work CWS delivers across the region.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 24px;">
         <div style="position: relative; border-radius: 6px; overflow: hidden; aspect-ratio: 4/3;">
           <img src="img/weed-control.jpg" alt="Bindii weed control Willunga" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="1080" height="600" loading="lazy" decoding="async">
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 21px; color: #fff; margin: 0 0 6px;">Bindii Weed Control</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">WILLUNGA, SA</span></div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); color: #fff; margin: 0 0 6px;">Bindii Weed Control</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">WILLUNGA, SA</span></div>
         </div>
         <div style="position: relative; border-radius: 6px; overflow: hidden; aspect-ratio: 4/3;">
           <img src="img/paddock-slashing-fleurieu.webp" alt="Fire season block slashing Kuitpo" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="1258" height="900" loading="lazy" decoding="async">
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 21px; color: #fff; margin: 0 0 6px;">Fire Season Block Slashing</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">KUITPO, SA</span></div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); color: #fff; margin: 0 0 6px;">Fire Season Block Slashing</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">KUITPO, SA</span></div>
         </div>
         <div style="position: relative; border-radius: 6px; overflow: hidden; aspect-ratio: 4/3;">
           <img src="img/capeweed-thistle.png" alt="Cape weed and thistle control McLaren Vale" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="850" height="567" loading="lazy" decoding="async">
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 21px; color: #fff; margin: 0 0 6px;">Cape Weed &amp; Thistle Control</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">MCLAREN VALE, SA</span></div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); color: #fff; margin: 0 0 6px;">Cape Weed &amp; Thistle Control</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">MCLAREN VALE, SA</span></div>
         </div>
         <div style="position: relative; border-radius: 6px; overflow: hidden; aspect-ratio: 4/3;">
           <img src="img/garden-cleanup-block-clearing.jpg" alt="Vacant block clearance Aldinga Beach" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="1400" height="1050" loading="lazy" decoding="async">
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 21px; color: #fff; margin: 0 0 6px;">Vacant Block Clearance</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">ALDINGA BEACH, SA</span></div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); color: #fff; margin: 0 0 6px;">Vacant Block Clearance</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">ALDINGA BEACH, SA</span></div>
         </div>
         <div style="position: relative; border-radius: 6px; overflow: hidden; aspect-ratio: 4/3;">
           <img src="img/shrub-pruning.jpg" alt="Garden bed weed control Port Willunga" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="686" height="604" loading="lazy" decoding="async">
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 21px; color: #fff; margin: 0 0 6px;">Garden Bed Weed Control</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">PORT WILLUNGA, SA</span></div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); color: #fff; margin: 0 0 6px;">Garden Bed Weed Control</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">PORT WILLUNGA, SA</span></div>
         </div>
         <div style="position: relative; border-radius: 6px; overflow: hidden; aspect-ratio: 4/3;">
           <img src="img/fence-line-weed-spraying.webp" alt="Fence line slashing Mount Compass" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="1258" height="820" loading="lazy" decoding="async">
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 21px; color: #fff; margin: 0 0 6px;">Fence Line Slashing</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">MOUNT COMPASS, SA</span></div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); color: #fff; margin: 0 0 6px;">Fence Line Slashing</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">MOUNT COMPASS, SA</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
-    <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 72px; align-items: center;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: clamp(32px, 5.81vw, 72px); align-items: center;">
       <div>
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">Service Area</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 44px; line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 28px; letter-spacing: -0.8px;">Weed Control &amp; Block Slashing Across the Fleurieu Peninsula</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(23px, 3.55vw, 44px); line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 28px; letter-spacing: -0.8px;">Weed Control &amp; Block Slashing Across the Fleurieu Peninsula</h2>
         <div style="display: flex; flex-direction: column; gap: 18px; font-size: 17px; line-height: 1.78; color: #5c6355; margin-bottom: 36px;">
           <p style="margin: 0;">CWS provides <strong style="color: #1a2417;">professional weed control and block slashing services throughout the Fleurieu Peninsula</strong> — from the residential suburbs of Willunga, McLaren Vale, and Aldinga through to the rural lifestyle blocks and paddocks of Kuitpo, Whites Valley, Encounter Bay, and Mount Compass.</p>
           <p style="margin: 0;">Weed species, fire risk, and compliance requirements vary across the Fleurieu Peninsula — coastal properties near Sellicks Beach and Port Willunga face different weed pressures than the clay-soil rural blocks inland around McLaren Flat and Kuitpo. CWS's local knowledge means treatments are timed and targeted to match the specific conditions in your suburb, not a generic regional approach.</p>
@@ -487,51 +490,51 @@
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #faf9f6;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #faf9f6;">
     <div style="max-width: 900px; margin: 0 auto; padding: 0 28px;">
       <div style="text-align: center; margin-bottom: 60px;">
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">FAQs</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 44px; line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Frequently Asked Questions About Weed Control &amp; Block Slashing</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(23px, 3.55vw, 44px); line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Frequently Asked Questions About Weed Control &amp; Block Slashing</h2>
         <p style="font-size: 18px; line-height: 1.7; color: #5c6355; margin: 0;">Answers to what Willunga and Fleurieu Peninsula property owners ask most about weed control, block slashing, and fire season compliance.</p>
       </div>
       <div style="display: flex; flex-direction: column; gap: 14px;">
         <details style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 26px 30px;">
-          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">What is the difference between weed control and block slashing? <span style="color: #8aaa78; font-size: 22px; line-height: 1;">+</span></summary>
+          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">What is the difference between weed control and block slashing? <span style="color: #8aaa78; font-size: clamp(19px, 1.77vw, 22px); line-height: 1;">+</span></summary>
           <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.78; color: #5c6355;">Weed control uses targeted herbicide treatments to eliminate specific weed species from lawns, garden beds, and rural land — killing plants chemically at the root and seed stage. Block slashing uses mechanical equipment (ride-on slashers and mowers) to cut down overgrown vegetation on vacant, rural, or unmanaged land. Both services are often used together on Fleurieu Peninsula properties — slashing reduces the bulk vegetation, then herbicide controls regrowth and weed seeds.</p>
         </details>
         <details style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 26px 30px;">
-          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">When is the best time to treat bindii in Willunga and McLaren Vale? <span style="color: #8aaa78; font-size: 22px; line-height: 1;">+</span></summary>
+          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">When is the best time to treat bindii in Willunga and McLaren Vale? <span style="color: #8aaa78; font-size: clamp(19px, 1.77vw, 22px); line-height: 1;">+</span></summary>
           <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.78; color: #5c6355;">The most effective time to treat bindii on the Fleurieu Peninsula is late winter to early spring (July to August), before the plant develops its painful prickles (seeds). Treating bindii after the spines have formed will kill the plant, but the spines will remain in your lawn until they naturally break down. Early treatment prevents the seed bank from replenishing for the following year.</p>
         </details>
         <details style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 26px 30px;">
-          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">Do I need to slash my block for fire season on the Fleurieu Peninsula? <span style="color: #8aaa78; font-size: 22px; line-height: 1;">+</span></summary>
+          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">Do I need to slash my block for fire season on the Fleurieu Peninsula? <span style="color: #8aaa78; font-size: clamp(19px, 1.77vw, 22px); line-height: 1;">+</span></summary>
           <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.78; color: #5c6355;">Yes. Local councils across the Fleurieu Peninsula (including Mount Barker District and Alexandrina Council) issue mandatory fire hazard reduction notices requiring property owners to slash long grass and weeds on vacant blocks, rural living properties, and fence lines before the fire danger season begins (typically October/November). Failure to comply can result in council fines and the council undertaking the work at your expense.</p>
         </details>
         <details style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 26px 30px;">
-          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">Will weed control herbicides damage my Buffalo lawn? <span style="color: #8aaa78; font-size: 22px; line-height: 1;">+</span></summary>
+          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">Will weed control herbicides damage my Buffalo lawn? <span style="color: #8aaa78; font-size: clamp(19px, 1.77vw, 22px); line-height: 1;">+</span></summary>
           <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.78; color: #5c6355;">Not when applied correctly by a professional. CWS uses selective herbicides specifically formulated to be safe for Buffalo, Kikuyu, and Couch lawns. Many off-the-shelf weed killers from hardware stores will severely damage or kill Buffalo grass if applied incorrectly. We identify your grass type before selecting and applying any herbicide.</p>
         </details>
         <details style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 26px 30px;">
-          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">How often do I need to spray for weeds on the Fleurieu Peninsula? <span style="color: #8aaa78; font-size: 22px; line-height: 1;">+</span></summary>
+          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">How often do I need to spray for weeds on the Fleurieu Peninsula? <span style="color: #8aaa78; font-size: clamp(19px, 1.77vw, 22px); line-height: 1;">+</span></summary>
           <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.78; color: #5c6355;">Effective weed control is rarely achieved with a single spray. Most Fleurieu Peninsula properties require a seasonal program — typically two to three visits per year — to target different weed species as they germinate across autumn, winter, and spring. CWS builds a custom treatment schedule based on the specific weed pressures on your property.</p>
         </details>
         <details style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 26px 30px;">
-          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">Are thistles and cape weed declared weeds in South Australia? <span style="color: #8aaa78; font-size: 22px; line-height: 1;">+</span></summary>
+          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">Are thistles and cape weed declared weeds in South Australia? <span style="color: #8aaa78; font-size: clamp(19px, 1.77vw, 22px); line-height: 1;">+</span></summary>
           <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.78; color: #5c6355;">Yes, several thistle species (including Scotch, variegated, and saffron thistle) and cape weed are declared pest plants in South Australia under the Landscape South Australia Act. Landowners have a legal responsibility to control these weeds on their properties and prevent them from spreading to neighbouring land. CWS provides targeted treatment programs to help rural and lifestyle property owners meet these obligations.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #2a3e26;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #2a3e26;">
     <div style="max-width: 1140px; margin: 0 auto; padding: 0 28px;">
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 64px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 56px; align-items: center;">
+      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: clamp(27px, 5.16vw, 64px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: clamp(25px, 4.52vw, 56px); align-items: center;">
         <div>
           <div style="display: inline-block; color: #8aaa78; font-size: 11px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; background: rgba(255,255,255,0.08); padding: 9px 18px; border-radius: 999px; margin-bottom: 26px;">Ready When You Are</div>
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 40px; line-height: 1.14; font-weight: 700; color: #fff; margin: 0 0 22px; letter-spacing: -0.6px;">Ready to Eliminate Weeds or Slash Your Fleurieu Block?</h2>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(22px, 3.23vw, 40px); line-height: 1.14; font-weight: 700; color: #fff; margin: 0 0 22px; letter-spacing: -0.6px;">Ready to Eliminate Weeds or Slash Your Fleurieu Block?</h2>
           <p style="font-size: 17px; line-height: 1.75; color: rgba(255,255,255,0.8); margin: 0;">Whether you need targeted lawn weed control, fire season block slashing, or a full weed management program across your Fleurieu Peninsula property — CWS arrives with the right products, the right equipment, and the local knowledge to get it done properly.</p>
         </div>
-        <div style="background: #fff; border-radius: 6px; padding: 40px;">
+        <div style="background: #fff; border-radius: 6px; padding: clamp(17px, 3.23vw, 40px);">
           <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 2.6px; text-transform: uppercase; margin-bottom: 12px;">Fast Next Step</div>
           <p style="font-size: 15px; line-height: 1.72; color: #5c6355; margin: 0 0 28px;">Call now or submit a quote request. We'll assess your property for free and come back with a clear price and seasonal treatment plan.</p>
           <button type="button" data-open-quote style="width: 100%; background: #3d5c38; color: #fff; border: none; padding: 19px; border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:#4a6d44;">Request Your Free Quote</button>
@@ -540,9 +543,9 @@
     </div>
   </section>
 </main>
-<footer style="background: #1a2417; padding: 90px 0 40px;">
+<footer style="background: #1a2417; padding: clamp(38px, 7.26vw, 90px) 0 clamp(17px, 3.23vw, 40px);">
   <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 56px; padding-bottom: 56px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: clamp(25px, 4.52vw, 56px); padding-bottom: 56px; border-bottom: 1px solid rgba(255,255,255,0.1);">
       <div>
         <img src="img/logo.png" alt="CWS Lawn and Garden Care" style="height: 62px; width: auto; filter: brightness(0) invert(1); margin-bottom: 24px;" width="380" height="268" loading="lazy" decoding="async">
         <p style="font-size: 15px; line-height: 1.75; color: rgba(255,255,255,0.6); margin: 0;">Professional lawn mowing, acreage care, gardening, and lawn renovation across Willunga and the Fleurieu Peninsula.</p>
@@ -584,25 +587,25 @@
   </div>
 </footer>
 <div id="quote-modal" hidden>
-<div style="position: fixed; inset: 0; z-index: 200; background: rgba(12,18,10,0.72); backdrop-filter: blur(4px); display: flex; align-items: flex-start; justify-content: center; padding: 40px 20px; overflow-y: auto;">
-  <div style="width: 100%; max-width: 720px; background: #2a3e26; border: 1px solid rgba(255,255,255,0.16); border-radius: 8px; padding: 44px; box-shadow: 0 40px 120px rgba(0,0,0,0.5);">
+<div style="position: fixed; inset: 0; z-index: 200; background: rgba(12,18,10,0.72); backdrop-filter: blur(4px); display: flex; align-items: flex-start; justify-content: center; padding: clamp(17px, 3.23vw, 40px) 20px; overflow-y: auto;">
+  <div style="width: 100%; max-width: 720px; background: #2a3e26; border: 1px solid rgba(255,255,255,0.16); border-radius: 8px; padding: clamp(18px, 3.55vw, 44px); box-shadow: 0 40px 120px rgba(0,0,0,0.5);">
     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-bottom: 8px;">
-      <h3 style="font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 700; color: #fff; margin: 0;">Get a Free Quote</h3>
+      <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(20px, 2.74vw, 34px); font-weight: 700; color: #fff; margin: 0;">Get a Free Quote</h3>
       <button type="button" data-close-quote style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; width: 38px; height: 38px; border-radius: 50%; font-size: 18px; cursor: pointer; flex-shrink: 0;" style-hover="background:rgba(255,255,255,0.2);">×</button>
     </div>
     <p style="color: rgba(255,255,255,0.65); font-size: 15px; margin: 0 0 30px;">Tell us about your property and we'll come back with clear pricing and a recommended schedule.</p>
 
     <div data-form-success hidden>
-      <div style="background: rgba(138,170,120,0.14); border: 1px solid rgba(138,170,120,0.4); border-radius: 6px; padding: 40px; text-align: center;">
-        <div style="font-family: 'Playfair Display', serif; font-size: 28px; color: #fff; margin-bottom: 12px;">Quote request sent</div>
+      <div style="background: rgba(138,170,120,0.14); border: 1px solid rgba(138,170,120,0.4); border-radius: 6px; padding: clamp(17px, 3.23vw, 40px); text-align: center;">
+        <div style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 2.26vw, 28px); color: #fff; margin-bottom: 12px;">Quote request sent</div>
         <p style="color: rgba(255,255,255,0.7); font-size: 16px; line-height: 1.7; margin: 0 0 28px;">Thanks — we'll be in touch shortly with your free quote. For anything urgent, call Chris on 0402 559 065.</p>
-        <button type="button" data-close-quote style="background: #8aaa78; color: #16210f; border: none; padding: 16px 34px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.6px; text-transform: uppercase; cursor: pointer;" style-hover="background:#9cba8b;">Close</button>
+        <button type="button" data-close-quote style="background: #8aaa78; color: #16210f; border: none; padding: 16px clamp(14px, 2.74vw, 34px); border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.6px; text-transform: uppercase; cursor: pointer;" style-hover="background:#9cba8b;">Close</button>
       </div>
     </div>
 
     <div data-form-body>
     <form data-quote-form action="thank-you.html" method="get" style="display: flex; flex-direction: column; gap: 18px;">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 18px;">
         <div style="display: flex; flex-direction: column; gap: 8px;">
           <label style="color: rgba(255,255,255,0.9); font-size: 12px; font-weight: 900; letter-spacing: 1.2px; text-transform: uppercase;">Full Name</label>
           <input type="text" name="full_name" data-ghl-field="contact.full_name" placeholder="John Doe" required="required" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 5px; padding: 15px 16px; color: #fff; font-size: 15px; outline: none;" style-focus="border-color:#8aaa78; background:rgba(255,255,255,0.12);">

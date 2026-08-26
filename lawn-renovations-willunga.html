@@ -54,11 +54,14 @@
       <a href="contact.html" style="color: #f0ede6; font-size: 13px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; cursor: pointer;" style-hover="color:#8aaa78;">Contact</a>
       <button type="button" data-open-quote style="background: #8aaa78; color: #16210f; border: none; padding: 13px 26px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.4px; text-transform: uppercase; cursor: pointer;" style-hover="background:#9cba8b;">Get a Quote</button>
     </div>
-    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+    <div class="nav-mobile-actions">
+      <button type="button" data-open-quote class="nav-cta">Quote</button>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+    </div>
   </div>
 </nav>
 <main>
-  <section style="position: relative; padding: 200px 0 110px; overflow: hidden;">
+  <section style="position: relative; padding: clamp(104px, 16.13vw, 200px) 0 clamp(46px, 8.87vw, 110px); overflow: hidden;">
     <img src="img/scarifying.jpg" alt="Lawn renovations Willunga" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" width="1600" height="901" fetchpriority="high">
     <div style="position: absolute; inset: 0; background: linear-gradient(100deg, rgba(26,36,23,0.96) 0%, rgba(26,36,23,0.82) 50%, rgba(26,36,23,0.4) 100%);"></div>
     <div style="position: relative; z-index: 2; max-width: 1240px; margin: 0 auto; padding: 0 28px;">
@@ -71,11 +74,11 @@
       </div>
       <div style="max-width: 860px;">
         <div style="display: inline-block; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 9px 20px; border-radius: 999px; font-size: 11px; font-weight: 900; letter-spacing: 2.4px; margin-bottom: 30px;">ALL SERVICES • LAWN RENOVATIONS &amp; TREATMENTS</div>
-        <h1 style="font-family: 'Playfair Display', serif; font-size: 68px; line-height: 1.07; font-weight: 700; color: #fff; margin: 0 0 28px; letter-spacing: -1.4px;"><em style="color: #8aaa78; font-weight: 600;">Lawn Renovations,</em> Aeration &amp; Fertilising in Willunga</h1>
-        <p style="font-size: 20px; line-height: 1.7; color: rgba(255,255,255,0.82); margin: 0 0 44px; max-width: 700px; text-wrap: pretty;">Revive a patchy, compacted, or struggling lawn with professional renovation treatments. CWS delivers aeration, scarifying, fertilising, and weed control across Willunga and the Fleurieu Peninsula.</p>
+        <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 5.48vw, 68px); line-height: 1.07; font-weight: 700; color: #fff; margin: 0 0 28px; letter-spacing: -1.4px;"><em style="color: #8aaa78; font-weight: 600;">Lawn Renovations,</em> Aeration &amp; Fertilising in Willunga</h1>
+        <p style="font-size: clamp(17px, 1.61vw, 20px); line-height: 1.7; color: rgba(255,255,255,0.82); margin: 0 0 clamp(18px, 3.55vw, 44px); max-width: 700px; text-wrap: pretty;">Revive a patchy, compacted, or struggling lawn with professional renovation treatments. CWS delivers aeration, scarifying, fertilising, and weed control across Willunga and the Fleurieu Peninsula.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 52px;">
-          <button type="button" data-open-quote style="background: #8aaa78; color: #16210f; border: none; padding: 20px 40px; border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:#9cba8b;">Get a Free Quote</button>
-          <a href="#lr-details" style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.24); padding: 20px 40px; border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase;" style-hover="background:rgba(255,255,255,0.2); color:#fff;">Learn More</a>
+          <button type="button" data-open-quote style="background: #8aaa78; color: #16210f; border: none; padding: 20px clamp(17px, 3.23vw, 40px); border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:#9cba8b;">Get a Free Quote</button>
+          <a href="#lr-details" style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.24); padding: 20px clamp(17px, 3.23vw, 40px); border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase;" style-hover="background:rgba(255,255,255,0.2); color:#fff;">Learn More</a>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 12px;">
           <span style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); padding: 11px 20px; border-radius: 999px; color: rgba(255,255,255,0.88); font-size: 13px; font-weight: 700;"><span style="width: 5px; height: 5px; border-radius: 50%; background: #8aaa78;"></span>Aeration &amp; Scarifying</span>
@@ -87,63 +90,63 @@
     </div>
   </section>
 
-  <section id="lr-details" style="padding: 130px 0; background: #faf9f6;">
-    <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 80px; align-items: center;">
+  <section id="lr-details" style="padding: clamp(55px, 10.48vw, 130px) 0; background: #faf9f6;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(36px, 6.45vw, 80px); align-items: center;">
       <div>
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">The Service</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 48px; line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 28px; letter-spacing: -0.8px;">What Are Lawn Renovations &amp; Treatments?</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.87vw, 48px); line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 28px; letter-spacing: -0.8px;">What Are Lawn Renovations &amp; Treatments?</h2>
         <div style="display: flex; flex-direction: column; gap: 20px; font-size: 17px; line-height: 1.78; color: #5c6355; text-wrap: pretty;">
           <p style="margin: 0;"><strong style="color: #1a2417;">Lawn renovations in Willunga</strong> are targeted treatments designed to restore a lawn that's struggling — whether it's compacted, patchy, thatch-heavy, weed-riddled, or simply lacking the nutrients it needs to thrive. Unlike resodding or full turf replacement, renovation treatments work with your existing lawn to rebuild it from the root zone up.</p>
           <p style="margin: 0;">CWS Lawn and Garden Care provides professional lawn renovation and treatment services across Willunga and the wider Fleurieu Peninsula. We assess your lawn's specific condition — soil compaction levels, thatch depth, grass variety, weed pressure, and nutrient profile — and recommend the most effective combination of treatments to bring it back to health.</p>
           <p style="margin: 0;">For Willunga homeowners dealing with <strong style="color: #1a2417;">clay-heavy soils, summer dry patches, or post-drought recovery</strong>, our renovation programs are specifically designed around the conditions common to the Fleurieu Peninsula. The result is a denser, greener, more resilient lawn that holds up through the extremes of our Mediterranean climate.</p>
         </div>
-        <button type="button" data-open-quote style="margin-top: 38px; background: #3d5c38; color: #fff; border: none; padding: 19px 38px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:#4a6d44;">Get a Free Quote</button>
+        <button type="button" data-open-quote style="margin-top: 38px; background: #3d5c38; color: #fff; border: none; padding: 19px clamp(16px, 3.06vw, 38px); border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:#4a6d44;">Get a Free Quote</button>
       </div>
       <div><img src="img/core-aeration-soil-cores.jpg" alt="Lawn renovations in Willunga" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 6px;" width="1200" height="1600" loading="lazy" decoding="async"></div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-      <div style="max-width: 780px; margin: 0 auto 68px; text-align: center;">
+      <div style="max-width: 780px; margin: 0 auto clamp(29px, 5.48vw, 68px); text-align: center;">
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">What's Included</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 48px; line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Lawn Renovation &amp; Treatment Services in Willunga</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.87vw, 48px); line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Lawn Renovation &amp; Treatment Services in Willunga</h2>
         <p style="font-size: 18px; line-height: 1.7; color: #5c6355; margin: 0;">Every renovation program CWS delivers is matched to your lawn's specific condition. Here's the full range of treatments we provide across Willunga and the Fleurieu Peninsula.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 24px;">
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #1a2417; margin: 0 0 14px;">Core Aeration</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 24px;">
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #1a2417; margin: 0 0 14px;">Core Aeration</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Core aeration removes small plugs of soil from your lawn, relieving compaction and opening channels for water, air, and nutrients to reach the root zone. Essential for Willunga's clay-heavy soils that compact under foot traffic and dry summers — the single most impactful lawn renovation treatment for most Fleurieu Peninsula lawns.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #1a2417; margin: 0 0 14px;">Scarifying &amp; Dethatching</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #1a2417; margin: 0 0 14px;">Scarifying &amp; Dethatching</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Scarifying removes the layer of dead organic material (thatch) that builds up between the grass leaf and the soil surface. A thatch layer over 15mm blocks water and fertiliser from reaching roots — scarifying eliminates this barrier, dramatically improving lawn response to subsequent treatments and regular mowing.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #1a2417; margin: 0 0 14px;">Lawn Fertilising</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #1a2417; margin: 0 0 14px;">Lawn Fertilising</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Professional fertilising programs for Willunga lawns use slow-release granular or liquid fertilisers matched to your grass variety — Buffalo, Kikuyu, Couch, or Fescue — and the seasonal needs of the Fleurieu Peninsula climate. Applied correctly after aeration for maximum uptake, fertilising drives dense, dark green growth and improved drought resistance.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #1a2417; margin: 0 0 14px;">Weed Control</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #1a2417; margin: 0 0 14px;">Weed Control</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Targeted weed control treatments eliminate broadleaf weeds, bindii, and grass weeds common in Willunga and McLaren Vale lawns — without damaging the surrounding turf. CWS uses selective herbicides appropriate to your grass type, applied at the correct seasonal timing for maximum effectiveness and minimal re-emergence.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #1a2417; margin: 0 0 14px;">Lawn Topdressing</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #1a2417; margin: 0 0 14px;">Lawn Topdressing</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Topdressing applies a thin layer of quality soil or sand mix across your lawn surface, levelling low spots, improving soil structure, and providing a nutrient-rich growing medium for new grass shoots post-scarifying. Particularly effective on Fleurieu Peninsula lawns recovering from summer stress or recent scarification.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #1a2417; margin: 0 0 14px;">Lawn Treatments &amp; Pest Control</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; color: #1a2417; margin: 0 0 14px;">Lawn Treatments &amp; Pest Control</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Lawn disease control, grub and pest treatments, and soil wetting agent applications for hydrophobic soils — a common issue in Willunga's sandy-loam and clay soils after dry summers. CWS identifies the specific problem and applies the right treatment, not a generic spray program.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #2a3e26;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #2a3e26;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-      <div style="max-width: 780px; margin: 0 auto 60px; text-align: center;">
+      <div style="max-width: 780px; margin: 0 auto clamp(25px, 4.84vw, 60px); text-align: center;">
         <div style="color: #8aaa78; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">Renovation vs Replacement</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 48px; line-height: 1.12; font-weight: 700; color: #fff; margin: 0 0 22px; letter-spacing: -0.8px;">Should You Renovate or Replace Your Willunga Lawn?</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.87vw, 48px); line-height: 1.12; font-weight: 700; color: #fff; margin: 0 0 22px; letter-spacing: -0.8px;">Should You Renovate or Replace Your Willunga Lawn?</h2>
         <p style="font-size: 18px; line-height: 1.72; color: rgba(255,255,255,0.75); margin: 0;">Most struggling lawns on the Fleurieu Peninsula can be fully restored through renovation — without the cost, disruption, and establishment time of full turf replacement. Here's how they compare.</p>
       </div>
       <div style="max-width: 940px; margin: 0 auto; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; overflow: hidden;">
@@ -165,46 +168,46 @@
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #faf9f6;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #faf9f6;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-      <div style="max-width: 780px; margin: 0 auto 68px; text-align: center;">
+      <div style="max-width: 780px; margin: 0 auto clamp(29px, 5.48vw, 68px); text-align: center;">
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">The Transformation</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 46px; line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">What Happens To Your Willunga Lawn After a Renovation Program</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.71vw, 46px); line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">What Happens To Your Willunga Lawn After a Renovation Program</h2>
         <p style="font-size: 18px; line-height: 1.7; color: #5c6355; margin: 0;">A full lawn renovation program doesn't happen overnight — but the results compound week by week. Here's what to expect from a typical CWS renovation on a Fleurieu Peninsula lawn.</p>
       </div>
-      <div style="max-width: 880px; margin: 0 auto; display: flex; flex-direction: column; gap: 46px;">
-        <div style="display: flex; gap: 34px;">
-          <div style="flex-shrink: 0; width: 66px; height: 66px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700;">01</div>
+      <div style="max-width: 880px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(21px, 3.71vw, 46px);">
+        <div style="display: flex; gap: clamp(15px, 2.74vw, 34px);">
+          <div style="flex-shrink: 0; width: 66px; height: 66px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700;">01</div>
           <div>
             <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 2.4px; text-transform: uppercase; margin-bottom: 10px;">Day 1 — Assessment &amp; Treatment</div>
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; color: #1a2417; margin: 0 0 14px;">Scarifying, Aeration &amp; Weed Control Applied</h3>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(22px, 2.1vw, 26px); font-weight: 700; color: #1a2417; margin: 0 0 14px;">Scarifying, Aeration &amp; Weed Control Applied</h3>
             <p style="font-size: 16px; line-height: 1.76; color: #5c6355; margin: 0 0 16px;">CWS visits your Willunga property and carries out the agreed renovation program — scarifying to remove thatch, core aeration to relieve compaction, and targeted weed control. Your lawn will look rough immediately post-treatment — this is normal and expected. The renovation process stresses the turf to force recovery and new growth.</p>
             <span style="display: inline-block; background: #f2efe7; border: 1px solid #e2ded2; padding: 8px 16px; border-radius: 999px; font-size: 13px; font-weight: 700; color: #1a2417;">Lawn looks rough — this is normal</span>
           </div>
         </div>
-        <div style="display: flex; gap: 34px;">
-          <div style="flex-shrink: 0; width: 66px; height: 66px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700;">02</div>
+        <div style="display: flex; gap: clamp(15px, 2.74vw, 34px);">
+          <div style="flex-shrink: 0; width: 66px; height: 66px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700;">02</div>
           <div>
             <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 2.4px; text-transform: uppercase; margin-bottom: 10px;">Week 1-2 — Fertilising &amp; Topdressing</div>
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; color: #1a2417; margin: 0 0 14px;">Nutrients &amp; Soil Amendment Applied</h3>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(22px, 2.1vw, 26px); font-weight: 700; color: #1a2417; margin: 0 0 14px;">Nutrients &amp; Soil Amendment Applied</h3>
             <p style="font-size: 16px; line-height: 1.76; color: #5c6355; margin: 0 0 16px;">One to two weeks after aeration, CWS returns to apply slow-release fertiliser and topdressing mix into the aeration holes and across the lawn surface. This feeds the root zone directly and begins the density rebuild. You'll see the first signs of new green shoots emerging across treated areas within 10-14 days of the initial renovation.</p>
             <span style="display: inline-block; background: #f2efe7; border: 1px solid #e2ded2; padding: 8px 16px; border-radius: 999px; font-size: 13px; font-weight: 700; color: #1a2417;">First new growth visible</span>
           </div>
         </div>
-        <div style="display: flex; gap: 34px;">
-          <div style="flex-shrink: 0; width: 66px; height: 66px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700;">03</div>
+        <div style="display: flex; gap: clamp(15px, 2.74vw, 34px);">
+          <div style="flex-shrink: 0; width: 66px; height: 66px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700;">03</div>
           <div>
             <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 2.4px; text-transform: uppercase; margin-bottom: 10px;">Week 3-6 — Active Recovery</div>
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; color: #1a2417; margin: 0 0 14px;">Density &amp; Colour Improving Rapidly</h3>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(22px, 2.1vw, 26px); font-weight: 700; color: #1a2417; margin: 0 0 14px;">Density &amp; Colour Improving Rapidly</h3>
             <p style="font-size: 16px; line-height: 1.76; color: #5c6355; margin: 0 0 16px;">By weeks three to five, the renovation program starts showing clearly — weed pressure is reduced, the grass is noticeably greener, and density is filling through the previously thin or patchy areas. This is the period where most Willunga homeowners first really see the transformation taking shape across their lawn.</p>
             <span style="display: inline-block; background: #f2efe7; border: 1px solid #e2ded2; padding: 8px 16px; border-radius: 999px; font-size: 13px; font-weight: 700; color: #1a2417;">Visible density improvement</span>
           </div>
         </div>
-        <div style="display: flex; gap: 34px;">
-          <div style="flex-shrink: 0; width: 66px; height: 66px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700;">04</div>
+        <div style="display: flex; gap: clamp(15px, 2.74vw, 34px);">
+          <div style="flex-shrink: 0; width: 66px; height: 66px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700;">04</div>
           <div>
             <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 2.4px; text-transform: uppercase; margin-bottom: 10px;">Week 6-10 — Full Transformation</div>
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; color: #1a2417; margin: 0 0 14px;">Restored, Dense &amp; Drought-Ready</h3>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(22px, 2.1vw, 26px); font-weight: 700; color: #1a2417; margin: 0 0 14px;">Restored, Dense &amp; Drought-Ready</h3>
             <p style="font-size: 16px; line-height: 1.76; color: #5c6355; margin: 0 0 16px;">A fully renovated Willunga lawn at week 8-10 is measurably different from its pre-treatment state — denser root system, improved soil structure from aeration, weed-free surface, and a strong nutrient base that will carry it through the next Fleurieu summer with significantly less stress and drought impact than before renovation.</p>
             <span style="display: inline-block; background: #f2efe7; border: 1px solid #e2ded2; padding: 8px 16px; border-radius: 999px; font-size: 13px; font-weight: 700; color: #1a2417;">Full renovation result achieved</span>
           </div>
@@ -213,171 +216,171 @@
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-      <div style="max-width: 760px; margin: 0 auto 68px; text-align: center;">
+      <div style="max-width: 760px; margin: 0 auto clamp(29px, 5.48vw, 68px); text-align: center;">
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">Signs to Watch For</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 48px; line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Signs Your Willunga Lawn Needs a Renovation Program</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.87vw, 48px); line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Signs Your Willunga Lawn Needs a Renovation Program</h2>
         <p style="font-size: 18px; line-height: 1.7; color: #5c6355; margin: 0;">Fleurieu Peninsula lawns face specific pressures — here are the signs that renovation treatments will help more than regular mowing alone.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 24px;">
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">01</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Lawn Feels Hard &amp; Compacted</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: 24px;">
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <div style="font-family: 'Playfair Display', serif; font-size: clamp(21px, 3.06vw, 38px); font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">01</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Lawn Feels Hard &amp; Compacted</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">A lawn that feels solid and unyielding underfoot — especially common in Willunga's clay soils — is suffering from compaction. Water pools on the surface instead of soaking in. Core aeration is the definitive fix, opening the soil and restoring permeability and root depth.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">02</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Dry Patches That Won't Recover</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <div style="font-family: 'Playfair Display', serif; font-size: clamp(21px, 3.06vw, 38px); font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">02</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Dry Patches That Won't Recover</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Hydrophobic (water-repellent) soils are widespread across the Fleurieu Peninsula, particularly after dry summers. Water beads and runs off rather than soaking in, leaving persistent dry patches even after irrigation. Wetting agent treatments and aeration resolve this effectively and lastingly.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">03</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Thatch Deeper Than 15mm</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <div style="font-family: 'Playfair Display', serif; font-size: clamp(21px, 3.06vw, 38px); font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">03</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Thatch Deeper Than 15mm</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Stick a screwdriver into your lawn — if there's a spongy brown layer more than 15mm thick between the grass and soil, you have excess thatch. Thatch blocks water, fertiliser, and air from reaching roots. Scarifying removes this layer in a single renovation visit.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">04</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Lawn Yellowing Despite Watering</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <div style="font-family: 'Playfair Display', serif; font-size: clamp(21px, 3.06vw, 38px); font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">04</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Lawn Yellowing Despite Watering</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">A yellow lawn that doesn't respond to watering is typically suffering from nutrient deficiency, compaction preventing uptake, or a combination of both. Professional fertilising matched to your grass variety and soil type addresses this precisely — without the burn risk of incorrect DIY application.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">05</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Weeds Taking Over the Lawn</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <div style="font-family: 'Playfair Display', serif; font-size: clamp(21px, 3.06vw, 38px); font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">05</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Weeds Taking Over the Lawn</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Bindii, broadleaf weeds, or invasive grass species spreading through your Willunga lawn indicate weakened turf that can't compete. Targeted weed control combined with renovation treatments restores turf density, making it far harder for weeds to re-establish after treatment.</p>
         </div>
-        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: 36px;">
-          <div style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">06</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Poor Recovery After Summer</h3>
+        <div style="background: #faf9f6; border: 1px solid #e2ded2; border-radius: 6px; padding: clamp(15px, 2.9vw, 36px);">
+          <div style="font-family: 'Playfair Display', serif; font-size: clamp(21px, 3.06vw, 38px); font-weight: 700; color: rgba(61,92,56,0.22); line-height: 1; margin-bottom: 18px;">06</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Poor Recovery After Summer</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">A Fleurieu Peninsula lawn that has gone through a hard summer and is struggling to recover into autumn is a prime candidate for renovation. Aeration, fertilising, and topdressing applied in autumn gives your lawn the best possible foundation heading into the cooler growing season.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #faf9f6;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #faf9f6;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-      <div style="max-width: 700px; margin: 0 auto 72px; text-align: center;">
+      <div style="max-width: 700px; margin: 0 auto clamp(30px, 5.81vw, 72px); text-align: center;">
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">How It Works</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 48px; line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Our Lawn Renovation Process in Willunga</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.87vw, 48px); line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Our Lawn Renovation Process in Willunga</h2>
         <p style="font-size: 18px; line-height: 1.7; color: #5c6355; margin: 0;">Four steps from assessment to a fully restored Fleurieu Peninsula lawn.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: clamp(18px, 3.23vw, 40px);">
         <div>
-          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 26px;">01</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Free Lawn Assessment</h3>
+          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; margin-bottom: 26px;">01</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Free Lawn Assessment</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Call 0402 559 065 or submit the quote form. We visit your Willunga property and assess your lawn's specific condition — compaction, thatch, weed pressure, nutrient status, and grass type — before recommending a treatment plan.</p>
         </div>
         <div>
-          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 26px;">02</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Tailored Renovation Plan</h3>
+          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; margin-bottom: 26px;">02</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Tailored Renovation Plan</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">We provide a clear written scope of recommended treatments — aeration, scarifying, fertilising, weed control — with fixed pricing and expected outcomes. No locked-in programs and no unnecessary treatments added to inflate the quote.</p>
         </div>
         <div>
-          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 26px;">03</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Professional Treatment Program</h3>
+          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; margin-bottom: 26px;">03</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Professional Treatment Program</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">CWS carries out the agreed renovation program using professional-grade equipment and matched products. Treatments are timed correctly for your grass variety and the current Fleurieu Peninsula season for maximum effectiveness.</p>
         </div>
         <div>
-          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 26px;">04</div>
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 12px;">Follow-Up &amp; Ongoing Care</h3>
+          <div style="width: 68px; height: 68px; border-radius: 50%; background: #3d5c38; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); font-weight: 700; margin-bottom: 26px;">04</div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 12px;">Follow-Up &amp; Ongoing Care</h3>
           <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">We follow up to check recovery progress and can schedule seasonal maintenance treatments — fertilising, weed control, and aeration — to keep your renovated Willunga lawn in peak condition year after year.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
-    <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 72px; align-items: start;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(32px, 5.81vw, 72px); align-items: start;">
       <div>
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">Why Choose CWS</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 46px; line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 44px; letter-spacing: -0.8px;">Why Choose CWS for Lawn Renovations in Willunga</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.71vw, 46px); line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 clamp(18px, 3.55vw, 44px); letter-spacing: -0.8px;">Why Choose CWS for Lawn Renovations in Willunga</h2>
         <div style="display: flex; flex-direction: column; gap: 32px;">
           <div style="display: flex; gap: 22px;">
-            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: 22px; color: #8aaa78; font-weight: 700; width: 34px;">01</span>
+            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); color: #8aaa78; font-weight: 700; width: 34px;">01</span>
             <div>
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 10px;">Diagnosis Before Treatment</h3>
+              <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 10px;">Diagnosis Before Treatment</h3>
               <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">We assess your lawn before recommending any treatment — compaction testing, thatch measurement, grass identification, and weed species assessment. Fleurieu Peninsula lawns respond differently depending on soil type, grass variety, and seasonal timing. We match the treatment to the problem, not the other way around.</p>
             </div>
           </div>
           <div style="display: flex; gap: 22px;">
-            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: 22px; color: #8aaa78; font-weight: 700; width: 34px;">02</span>
+            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); color: #8aaa78; font-weight: 700; width: 34px;">02</span>
             <div>
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 10px;">Fleurieu Peninsula Soil Knowledge</h3>
+              <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 10px;">Fleurieu Peninsula Soil Knowledge</h3>
               <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">Willunga's clay soils compact differently from the sandy soils around Aldinga Beach and Port Willunga, and both behave differently from the loam conditions around McLaren Vale. Our local experience means treatments are calibrated to your specific soil type — not a generic program applied across the board.</p>
             </div>
           </div>
           <div style="display: flex; gap: 22px;">
-            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: 22px; color: #8aaa78; font-weight: 700; width: 34px;">03</span>
+            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); color: #8aaa78; font-weight: 700; width: 34px;">03</span>
             <div>
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 10px;">Professional-Grade Equipment</h3>
+              <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 10px;">Professional-Grade Equipment</h3>
               <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">CWS uses commercial core aerators, scarifiers, and application equipment — not hire-shop alternatives. The difference in depth, consistency, and coverage is significant, particularly for compacted Willunga lawns that require thorough treatment to see lasting results from the renovation program.</p>
             </div>
           </div>
           <div style="display: flex; gap: 22px;">
-            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: 22px; color: #8aaa78; font-weight: 700; width: 34px;">04</span>
+            <span style="flex-shrink: 0; font-family: 'Playfair Display', serif; font-size: clamp(19px, 1.77vw, 22px); color: #8aaa78; font-weight: 700; width: 34px;">04</span>
             <div>
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: #1a2417; margin: 0 0 10px;">Honest Renovation vs Replacement Advice</h3>
+              <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); font-weight: 700; color: #1a2417; margin: 0 0 10px;">Honest Renovation vs Replacement Advice</h3>
               <p style="font-size: 15px; line-height: 1.74; color: #5c6355; margin: 0;">If your lawn is beyond renovation — less than 30-40% viable grass coverage — we'll tell you honestly, rather than take your money for treatments that won't work. CWS gives you a realistic assessment of what's achievable so you can make the right decision for your Willunga property.</p>
             </div>
           </div>
         </div>
       </div>
-      <div style="background: #2a3e26; border-radius: 6px; padding: 56px 48px; color: #fff;">
-        <h3 style="font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 700; margin: 0 0 40px;">CWS Renovations at a Glance</h3>
+      <div style="background: #2a3e26; border-radius: 6px; padding: clamp(24px, 4.52vw, 56px) clamp(20px, 3.87vw, 48px); color: #fff;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(19px, 2.42vw, 30px); font-weight: 700; margin: 0 0 clamp(17px, 3.23vw, 40px);">CWS Renovations at a Glance</h3>
         <div style="display: flex; flex-direction: column; gap: 26px;">
           <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 18px;"><span style="color: rgba(255,255,255,0.7); font-size: 16px;">Treatments Offered</span><span style="font-size: 15px; font-weight: 700; text-align: right;">Aeration, Scarifying, Fertilising, Weed Control</span></div>
           <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 18px;"><span style="color: rgba(255,255,255,0.7); font-size: 16px;">Results Visible</span><span style="font-size: 17px; font-weight: 700;">From Week 2</span></div>
           <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 18px;"><span style="color: rgba(255,255,255,0.7); font-size: 16px;">Full Recovery</span><span style="font-size: 17px; font-weight: 700;">6-10 Weeks</span></div>
           <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 18px;"><span style="color: rgba(255,255,255,0.7); font-size: 16px;">Coverage</span><span style="font-size: 16px; font-weight: 700; text-align: right;">Willunga &amp; Fleurieu Peninsula</span></div>
-          <div style="display: flex; justify-content: space-between; align-items: flex-end;"><span style="color: rgba(255,255,255,0.7); font-size: 16px;">Assessment</span><span style="font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 700; font-style: italic; color: #8aaa78; line-height: 1;">Free</span></div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-end;"><span style="color: rgba(255,255,255,0.7); font-size: 16px;">Assessment</span><span style="font-family: 'Playfair Display', serif; font-size: clamp(20px, 2.74vw, 34px); font-weight: 700; font-style: italic; color: #8aaa78; line-height: 1;">Free</span></div>
         </div>
         <button type="button" data-open-quote style="margin-top: 44px; width: 100%; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.22); color: #fff; padding: 19px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:rgba(255,255,255,0.2);">Get a Free Quote</button>
       </div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #faf9f6;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #faf9f6;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-      <div style="max-width: 780px; margin: 0 0 64px;">
+      <div style="max-width: 780px; margin: 0 0 clamp(27px, 5.16vw, 64px);">
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">Recent Projects</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 46px; line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Recent Lawn Renovation Projects in Willunga &amp; Surrounds</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 3.71vw, 46px); line-height: 1.12; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Recent Lawn Renovation Projects in Willunga &amp; Surrounds</h2>
         <p style="font-size: 18px; line-height: 1.7; color: #5c6355; margin: 0;">From post-summer recovery programs in Willunga to weed control and aeration across McLaren Vale and Aldinga — here's a look at the lawn renovation and treatment work CWS delivers across the Fleurieu Peninsula.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 24px;">
         <div style="position: relative; border-radius: 6px; overflow: hidden; aspect-ratio: 4/3;">
           <img src="img/core-aeration-willunga.jpg" alt="Core aeration before and after Willunga" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="1050" height="1400" loading="lazy" decoding="async">
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 21px; color: #fff; margin: 0 0 6px;">Core Aeration — Before &amp; After</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">WILLUNGA, SA</span></div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); color: #fff; margin: 0 0 6px;">Core Aeration — Before &amp; After</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">WILLUNGA, SA</span></div>
         </div>
         <div style="position: relative; border-radius: 6px; overflow: hidden; aspect-ratio: 4/3;">
           <img src="img/scarifying.jpg" alt="Scarifying and dethatching McLaren Vale" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="1600" height="901" loading="lazy" decoding="async">
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 21px; color: #fff; margin: 0 0 6px;">Scarifying &amp; Dethatching</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">MCLAREN VALE, SA</span></div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); color: #fff; margin: 0 0 6px;">Scarifying &amp; Dethatching</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">MCLAREN VALE, SA</span></div>
         </div>
         <div style="position: relative; border-radius: 6px; overflow: hidden; aspect-ratio: 4/3;">
           <img src="img/fence-line-weed-spraying.webp" alt="Fertilising and weed control Aldinga Beach" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="1258" height="820" loading="lazy" decoding="async">
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 21px; color: #fff; margin: 0 0 6px;">Fertilising &amp; Weed Control</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">ALDINGA BEACH, SA</span></div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); color: #fff; margin: 0 0 6px;">Fertilising &amp; Weed Control</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">ALDINGA BEACH, SA</span></div>
         </div>
         <div style="position: relative; border-radius: 6px; overflow: hidden; aspect-ratio: 4/3;">
           <img src="img/lawn-renovation-8-week-result.jpg" alt="Full renovation eight week result Port Willunga" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="1600" height="1200" loading="lazy" decoding="async">
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 21px; color: #fff; margin: 0 0 6px;">Full Renovation — 8 Week Result</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">PORT WILLUNGA, SA</span></div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); color: #fff; margin: 0 0 6px;">Full Renovation — 8 Week Result</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">PORT WILLUNGA, SA</span></div>
         </div>
         <div style="position: relative; border-radius: 6px; overflow: hidden; aspect-ratio: 4/3;">
           <img src="img/lawn-topdressing-aldinga.jpg" alt="Post-summer topdressing Sellicks Beach" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="1400" height="1050" loading="lazy" decoding="async">
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 21px; color: #fff; margin: 0 0 6px;">Post-Summer Topdressing</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">SELLICKS BEACH, SA</span></div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); color: #fff; margin: 0 0 6px;">Post-Summer Topdressing</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">SELLICKS BEACH, SA</span></div>
         </div>
         <div style="position: relative; border-radius: 6px; overflow: hidden; aspect-ratio: 4/3;">
           <img src="img/dry-patch.jpg" alt="Dry patch treatment McLaren Flat" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="275" height="183" loading="lazy" decoding="async">
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 21px; color: #fff; margin: 0 0 6px;">Dry Patch Treatment</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">MCLAREN FLAT, SA</span></div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,36,23,0.9), rgba(26,36,23,0.1) 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;"><h3 style="font-family: 'Playfair Display', serif; font-size: clamp(18px, 1.69vw, 21px); color: #fff; margin: 0 0 6px;">Dry Patch Treatment</h3><span style="color: #8aaa78; font-size: 10px; font-weight: 900; letter-spacing: 2px;">MCLAREN FLAT, SA</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
-    <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 72px; align-items: center;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #f2efe7; border-top: 1px solid #e2ded2; border-bottom: 1px solid #e2ded2;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: clamp(32px, 5.81vw, 72px); align-items: center;">
       <div>
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">Service Area</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 44px; line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 28px; letter-spacing: -0.8px;">Lawn Renovations Across Willunga &amp; the Fleurieu Peninsula</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(23px, 3.55vw, 44px); line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 28px; letter-spacing: -0.8px;">Lawn Renovations Across Willunga &amp; the Fleurieu Peninsula</h2>
         <div style="display: flex; flex-direction: column; gap: 18px; font-size: 17px; line-height: 1.78; color: #5c6355; margin-bottom: 36px;">
           <p style="margin: 0;">CWS provides <strong style="color: #1a2417;">professional lawn renovation and treatment services throughout Willunga</strong> and across the Fleurieu Peninsula. Our renovation territory covers everything from the beachside lawns of Aldinga Beach and Port Willunga — where salt air and sandy soils create distinct challenges — through to the clay-loam lawns of McLaren Vale and the rural residential properties around Mount Compass and Kuitpo.</p>
           <p style="margin: 0;">Every suburb on the Fleurieu Peninsula has its own soil profile, grass variety distribution, and seasonal pressures. CWS's local knowledge of renovation treatment timing and product selection for each area is what separates our results from a generic treatment applied without understanding the local conditions.</p>
@@ -407,51 +410,51 @@
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #faf9f6;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #faf9f6;">
     <div style="max-width: 900px; margin: 0 auto; padding: 0 28px;">
       <div style="text-align: center; margin-bottom: 60px;">
         <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 3.4px; text-transform: uppercase; margin-bottom: 22px;">FAQs</div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 44px; line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Frequently Asked Questions About Lawn Renovations in Willunga</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(23px, 3.55vw, 44px); line-height: 1.14; font-weight: 700; color: #1a2417; margin: 0 0 22px; letter-spacing: -0.8px;">Frequently Asked Questions About Lawn Renovations in Willunga</h2>
         <p style="font-size: 18px; line-height: 1.7; color: #5c6355; margin: 0;">Everything Willunga and Fleurieu Peninsula homeowners ask about lawn renovation treatments, aeration, scarifying, and fertilising programs.</p>
       </div>
       <div style="display: flex; flex-direction: column; gap: 14px;">
         <details style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 26px 30px;">
-          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">What is lawn aeration and does my Willunga lawn need it? <span style="color: #8aaa78; font-size: 22px; line-height: 1;">+</span></summary>
+          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">What is lawn aeration and does my Willunga lawn need it? <span style="color: #8aaa78; font-size: clamp(19px, 1.77vw, 22px); line-height: 1;">+</span></summary>
           <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.78; color: #5c6355;">Lawn aeration removes small cores of soil from your lawn to relieve compaction, improve drainage, and allow air, water, and nutrients to reach the root zone. Willunga's clay-dominant soils are highly prone to compaction — if your lawn feels hard underfoot, water sits on the surface after rain, or growth is thin and yellow despite watering, core aeration is almost certainly beneficial. CWS assesses this during your free lawn visit.</p>
         </details>
         <details style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 26px 30px;">
-          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">How much do lawn renovation treatments cost in Willunga? <span style="color: #8aaa78; font-size: 22px; line-height: 1;">+</span></summary>
+          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">How much do lawn renovation treatments cost in Willunga? <span style="color: #8aaa78; font-size: clamp(19px, 1.77vw, 22px); line-height: 1;">+</span></summary>
           <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.78; color: #5c6355;">The cost of lawn renovations depends on the specific treatments required (aeration, scarifying, fertilising, topdressing, weed control) and the size of your Willunga property. Because we tailor the program to what your lawn actually needs rather than selling a fixed package, we provide free, on-site assessments and quotes for all Fleurieu Peninsula properties.</p>
         </details>
         <details style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 26px 30px;">
-          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">When is the best time to aerate and scarify a lawn on the Fleurieu Peninsula? <span style="color: #8aaa78; font-size: 22px; line-height: 1;">+</span></summary>
+          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">When is the best time to aerate and scarify a lawn on the Fleurieu Peninsula? <span style="color: #8aaa78; font-size: clamp(19px, 1.77vw, 22px); line-height: 1;">+</span></summary>
           <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.78; color: #5c6355;">For warm-season grasses common in Willunga and the Fleurieu Peninsula (Kikuyu, Buffalo, Couch), the best time for heavy renovation work like scarifying and core aeration is mid-to-late spring or early autumn. The grass is actively growing during these periods, allowing it to recover quickly from the stress of the renovation treatments.</p>
         </details>
         <details style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 26px 30px;">
-          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">How long does a lawn take to recover after renovation in Willunga? <span style="color: #8aaa78; font-size: 22px; line-height: 1;">+</span></summary>
+          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">How long does a lawn take to recover after renovation in Willunga? <span style="color: #8aaa78; font-size: clamp(19px, 1.77vw, 22px); line-height: 1;">+</span></summary>
           <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.78; color: #5c6355;">After a full renovation program (scarifying and aeration), your lawn will look rough immediately following the treatment. With proper watering and the fertilising program applied by CWS, you will typically see new green shoots within 10-14 days, significant density improvement by weeks 3-5, and a fully restored, dense lawn by weeks 6-10, depending on the grass variety and weather conditions.</p>
         </details>
         <details style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 26px 30px;">
-          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">What's the difference between aeration and scarifying? <span style="color: #8aaa78; font-size: 22px; line-height: 1;">+</span></summary>
+          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">What's the difference between aeration and scarifying? <span style="color: #8aaa78; font-size: clamp(19px, 1.77vw, 22px); line-height: 1;">+</span></summary>
           <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.78; color: #5c6355;">Core aeration focuses on the soil — it removes soil plugs to relieve compaction and allow air and water to reach the roots. Scarifying focuses on the turf surface — it uses vertical blades to rip out the layer of dead organic matter (thatch) that builds up between the soil and the green grass leaf. Many Willunga lawns require both treatments simultaneously for a complete renovation.</p>
         </details>
         <details style="background: #f2efe7; border: 1px solid #e2ded2; border-radius: 6px; padding: 26px 30px;">
-          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">Can you treat bindii and broadleaf weeds in my Fleurieu Peninsula lawn? <span style="color: #8aaa78; font-size: 22px; line-height: 1;">+</span></summary>
+          <summary style="font-size: 18px; font-weight: 700; color: #1a2417; display: flex; justify-content: space-between; gap: 20px; align-items: center;">Can you treat bindii and broadleaf weeds in my Fleurieu Peninsula lawn? <span style="color: #8aaa78; font-size: clamp(19px, 1.77vw, 22px); line-height: 1;">+</span></summary>
           <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.78; color: #5c6355;">Yes. CWS provides targeted weed control treatments for bindii, clover, broadleaf weeds, and invasive grass species across Willunga and the Fleurieu Peninsula. Weed control is often combined with fertilising and aeration as part of a broader renovation program to restore turf density, which naturally suppresses future weed growth.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <section style="padding: 130px 0; background: #2a3e26;">
+  <section style="padding: clamp(55px, 10.48vw, 130px) 0; background: #2a3e26;">
     <div style="max-width: 1140px; margin: 0 auto; padding: 0 28px;">
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 64px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 56px; align-items: center;">
+      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: clamp(27px, 5.16vw, 64px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: clamp(25px, 4.52vw, 56px); align-items: center;">
         <div>
           <div style="display: inline-block; color: #8aaa78; font-size: 11px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; background: rgba(255,255,255,0.08); padding: 9px 18px; border-radius: 999px; margin-bottom: 26px;">Ready When You Are</div>
-          <h2 style="font-family: 'Playfair Display', serif; font-size: 42px; line-height: 1.12; font-weight: 700; color: #fff; margin: 0 0 22px; letter-spacing: -0.6px;">Ready to Revive Your Willunga Lawn?</h2>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(22px, 3.39vw, 42px); line-height: 1.12; font-weight: 700; color: #fff; margin: 0 0 22px; letter-spacing: -0.6px;">Ready to Revive Your Willunga Lawn?</h2>
           <p style="font-size: 17px; line-height: 1.75; color: rgba(255,255,255,0.8); margin: 0;">Whether your lawn needs aeration, scarifying, fertilising, weed control, or a full renovation program — CWS provides an honest assessment and professional results across Willunga and the Fleurieu Peninsula.</p>
         </div>
-        <div style="background: #fff; border-radius: 6px; padding: 40px;">
+        <div style="background: #fff; border-radius: 6px; padding: clamp(17px, 3.23vw, 40px);">
           <div style="color: #3d5c38; font-size: 11px; font-weight: 900; letter-spacing: 2.6px; text-transform: uppercase; margin-bottom: 12px;">Fast Next Step</div>
           <p style="font-size: 15px; line-height: 1.72; color: #5c6355; margin: 0 0 28px;">Call for immediate help or submit a quote request. We'll visit your lawn, assess the condition for free, and recommend the right treatments.</p>
           <button type="button" data-open-quote style="width: 100%; background: #3d5c38; color: #fff; border: none; padding: 19px; border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer;" style-hover="background:#4a6d44;">Request Your Free Assessment</button>
@@ -460,9 +463,9 @@
     </div>
   </section>
 </main>
-<footer style="background: #1a2417; padding: 90px 0 40px;">
+<footer style="background: #1a2417; padding: clamp(38px, 7.26vw, 90px) 0 clamp(17px, 3.23vw, 40px);">
   <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px;">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 56px; padding-bottom: 56px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: clamp(25px, 4.52vw, 56px); padding-bottom: 56px; border-bottom: 1px solid rgba(255,255,255,0.1);">
       <div>
         <img src="img/logo.png" alt="CWS Lawn and Garden Care" style="height: 62px; width: auto; filter: brightness(0) invert(1); margin-bottom: 24px;" width="380" height="268" loading="lazy" decoding="async">
         <p style="font-size: 15px; line-height: 1.75; color: rgba(255,255,255,0.6); margin: 0;">Professional lawn mowing, acreage care, gardening, and lawn renovation across Willunga and the Fleurieu Peninsula.</p>
@@ -504,25 +507,25 @@
   </div>
 </footer>
 <div id="quote-modal" hidden>
-<div style="position: fixed; inset: 0; z-index: 200; background: rgba(12,18,10,0.72); backdrop-filter: blur(4px); display: flex; align-items: flex-start; justify-content: center; padding: 40px 20px; overflow-y: auto;">
-  <div style="width: 100%; max-width: 720px; background: #2a3e26; border: 1px solid rgba(255,255,255,0.16); border-radius: 8px; padding: 44px; box-shadow: 0 40px 120px rgba(0,0,0,0.5);">
+<div style="position: fixed; inset: 0; z-index: 200; background: rgba(12,18,10,0.72); backdrop-filter: blur(4px); display: flex; align-items: flex-start; justify-content: center; padding: clamp(17px, 3.23vw, 40px) 20px; overflow-y: auto;">
+  <div style="width: 100%; max-width: 720px; background: #2a3e26; border: 1px solid rgba(255,255,255,0.16); border-radius: 8px; padding: clamp(18px, 3.55vw, 44px); box-shadow: 0 40px 120px rgba(0,0,0,0.5);">
     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-bottom: 8px;">
-      <h3 style="font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 700; color: #fff; margin: 0;">Get a Free Quote</h3>
+      <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(20px, 2.74vw, 34px); font-weight: 700; color: #fff; margin: 0;">Get a Free Quote</h3>
       <button type="button" data-close-quote style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; width: 38px; height: 38px; border-radius: 50%; font-size: 18px; cursor: pointer; flex-shrink: 0;" style-hover="background:rgba(255,255,255,0.2);">×</button>
     </div>
     <p style="color: rgba(255,255,255,0.65); font-size: 15px; margin: 0 0 30px;">Tell us about your property and we'll come back with clear pricing and a recommended schedule.</p>
 
     <div data-form-success hidden>
-      <div style="background: rgba(138,170,120,0.14); border: 1px solid rgba(138,170,120,0.4); border-radius: 6px; padding: 40px; text-align: center;">
-        <div style="font-family: 'Playfair Display', serif; font-size: 28px; color: #fff; margin-bottom: 12px;">Quote request sent</div>
+      <div style="background: rgba(138,170,120,0.14); border: 1px solid rgba(138,170,120,0.4); border-radius: 6px; padding: clamp(17px, 3.23vw, 40px); text-align: center;">
+        <div style="font-family: 'Playfair Display', serif; font-size: clamp(24px, 2.26vw, 28px); color: #fff; margin-bottom: 12px;">Quote request sent</div>
         <p style="color: rgba(255,255,255,0.7); font-size: 16px; line-height: 1.7; margin: 0 0 28px;">Thanks — we'll be in touch shortly with your free quote. For anything urgent, call Chris on 0402 559 065.</p>
-        <button type="button" data-close-quote style="background: #8aaa78; color: #16210f; border: none; padding: 16px 34px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.6px; text-transform: uppercase; cursor: pointer;" style-hover="background:#9cba8b;">Close</button>
+        <button type="button" data-close-quote style="background: #8aaa78; color: #16210f; border: none; padding: 16px clamp(14px, 2.74vw, 34px); border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.6px; text-transform: uppercase; cursor: pointer;" style-hover="background:#9cba8b;">Close</button>
       </div>
     </div>
 
     <div data-form-body>
     <form data-quote-form action="thank-you.html" method="get" style="display: flex; flex-direction: column; gap: 18px;">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 18px;">
         <div style="display: flex; flex-direction: column; gap: 8px;">
           <label style="color: rgba(255,255,255,0.9); font-size: 12px; font-weight: 900; letter-spacing: 1.2px; text-transform: uppercase;">Full Name</label>
           <input type="text" name="full_name" data-ghl-field="contact.full_name" placeholder="John Doe" required="required" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 5px; padding: 15px 16px; color: #fff; font-size: 15px; outline: none;" style-focus="border-color:#8aaa78; background:rgba(255,255,255,0.12);">

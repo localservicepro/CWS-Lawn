@@ -265,8 +265,12 @@
 /* ---- responsive nav ---- */
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
 .nav-toggle span { display: block; width: 26px; height: 2px; background: #f0ede6; margin: 6px 0; transition: transform .25s ease, opacity .25s ease; }
+.nav-mobile-actions { display: none; align-items: center; gap: 10px; }
+/* quote CTA stays reachable in the header instead of hiding behind the menu */
+.nav-cta { background: #8aaa78; color: #16210f; border: none; padding: 11px 18px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.2px; text-transform: uppercase; cursor: pointer; }
 @media (max-width: 1080px) {
   .nav-links { display: none !important; }
+  .nav-mobile-actions { display: flex; }
   .nav-toggle { display: block; }
   .nav-links.open { display: flex !important; position: absolute; top: 82px; left: 0; right: 0; flex-direction: column; align-items: stretch !important; gap: 0 !important; background: #22331f; padding: 12px 20px 22px; border-bottom: 1px solid rgba(255,255,255,0.12); }
   .nav-links.open > a, .nav-links.open > details { padding: 13px 4px; border-bottom: 1px solid rgba(255,255,255,0.07); }
@@ -284,3 +288,37 @@
 #quote-modal[hidden] { display: none; }
 [data-form-success][hidden] { display: none; }
 html { scroll-behavior: smooth; }
+img, iframe { max-width: 100%; }
+/* The width/height attributes (present to reserve space and avoid layout
+   shift) act as presentational hints, so an image whose CSS sets only a
+   width would take the raw pixel height and ignore aspect-ratio. Inline
+   heights from the design still win over this rule. */
+img { height: auto; }
+
+/* ---- mobile-first overrides ----
+   The design ships fixed desktop values in inline styles, so these need
+   !important to win. Fluid clamp() handles type and spacing at build time;
+   these rules fix layouts that can only collapse at a breakpoint. */
+@media (max-width: 760px) {
+  /* narrower gutters buy back ~16px of line length on a phone */
+  [style*="padding: 0 28px"] { padding-left: 20px !important; padding-right: 20px !important; }
+  /* fixed multi-column grids stack */
+  [style*="grid-template-columns: 1.4fr 1fr 1fr"],
+  [style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
+  /* wide tracking is hard to read at small sizes */
+  [style*="letter-spacing: 3.4px"] { letter-spacing: 2px !important; }
+  [style*="letter-spacing: 2.4px"],
+  [style*="letter-spacing: 2.2px"] { letter-spacing: 1.5px !important; }
+  /* cards and panels: trim the inner padding the design gives them */
+  [style*="padding: 44px"], [style*="padding: 42px"], [style*="padding: 40px"] { padding: 26px !important; }
+  [style*="padding: 56px 48px"] { padding: 30px 22px !important; }
+  [style*="padding: 72px 60px"] { padding: 34px 24px !important; }
+  /* maps and embeds */
+  iframe { height: 300px !important; }
+  /* keep the modal usable on a short screen */
+  #quote-modal > div { padding: 20px 12px !important; }
+  #quote-modal > div > div { padding: 26px 20px !important; }
+}
+@media (max-width: 420px) {
+  [style*="padding: 0 28px"] { padding-left: 16px !important; padding-right: 16px !important; }
+}
