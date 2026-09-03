@@ -317,26 +317,72 @@ nav details[data-services] > summary { cursor: pointer; }
    scrolls internally instead of pushing the page. */
 .modal-overlay { align-items: center !important; padding: clamp(10px, 2.5vw, 40px) !important; }
 .modal-panel {
-  max-width: min(640px, 100%) !important;
+  max-width: min(660px, 100%) !important;
   max-height: calc(100vh - clamp(20px, 5vw, 80px));
   max-height: calc(100dvh - clamp(20px, 5vw, 80px));
   overflow-y: auto; overscroll-behavior: contain;
-  padding: clamp(20px, 3vw, 36px) !important;
+  padding: clamp(18px, 2.2vw, 28px) !important;
+}
+/* Compact enough to sit fully in view on a laptop without an inner scrollbar:
+   trimmed chrome, tighter field rhythm, and paired fields two-up. */
+#quote-modal h3 { font-size: clamp(21px, 2.1vw, 26px) !important; }
+.modal-panel > div:first-child { margin-bottom: 4px !important; }
+.modal-panel > p { font-size: 14px !important; line-height: 1.5 !important; margin: 0 0 14px !important; }
+#quote-modal [data-close-quote] { width: 34px !important; height: 34px !important; font-size: 16px !important; }
+#quote-modal form { gap: 11px !important; }
+#quote-modal form div:has(> label) { gap: 4px !important; }
+#quote-modal form > div:first-child { gap: 11px 14px !important; }
+#quote-modal label { font-size: 11px !important; letter-spacing: 1px !important; }
+#quote-modal input, #quote-modal select { padding: 10px 13px !important; font-size: 15px !important; }
+#quote-modal textarea { height: 56px !important; padding: 9px 13px !important; font-size: 15px !important; }
+#quote-modal button[type="submit"] { padding: 14px 24px !important; }
+#quote-modal form > p { font-size: 12px !important; margin: 2px 0 0 !important; }
+@media (min-width: 620px) {
+  /* two fields per row: name+phone, email+service, address+size */
+  #quote-modal form {
+    display: grid !important; grid-template-columns: 1fr 1fr !important;
+    gap: 11px 14px !important; align-items: start !important;
+  }
+  #quote-modal form > div:first-child,
+  #quote-modal form > div:has(textarea),
+  #quote-modal form > button,
+  #quote-modal form > p { grid-column: 1 / -1 !important; }
 }
 @media (max-width: 760px) {
-  /* compact the form so it fits a phone without endless scrolling, and keep
-     inputs at 16px so iOS does not zoom the page on focus */
-  #quote-modal p { font-size: 14px !important; }
-  #quote-modal form { gap: 13px !important; }
+  /* keep inputs at 16px so iOS does not zoom the page on focus */
   #quote-modal input, #quote-modal select, #quote-modal textarea {
-    font-size: 16px !important; padding: 12px 13px !important;
+    font-size: 16px !important; padding: 11px 12px !important;
   }
-  #quote-modal textarea { height: 76px !important; }
-  #quote-modal label { font-size: 11px !important; }
-  #quote-modal button[type="submit"] { padding: 15px 22px !important; }
-}
-@media (max-height: 560px) {
   #quote-modal textarea { height: 60px !important; }
+}
+@media (max-width: 400px) {
+  /* squeeze the last ~45px so the whole form lands in view on a small phone */
+  .modal-panel { padding: 16px 14px !important; }
+  .modal-panel > p { font-size: 13px !important; margin: 0 0 10px !important; }
+  #quote-modal form { gap: 9px !important; }
+  #quote-modal input, #quote-modal select, #quote-modal textarea { padding: 10px 12px !important; }
+  #quote-modal textarea { height: 52px !important; }
+  #quote-modal button[type="submit"] { padding: 13px 20px !important; }
+}
+/* Short screens (small phones, phones in landscape) — drop the supporting
+   copy and tighten further so the fields themselves stay in view. Scoped by
+   width too, so a 720p desktop keeps the full layout. */
+@media (max-height: 720px) and (max-width: 900px) {
+  .modal-panel > p, #quote-modal form > p { display: none !important; }
+  .modal-panel > div:first-child { margin-bottom: 2px !important; }
+  #quote-modal h3 { font-size: 20px !important; }
+  #quote-modal form { gap: 8px !important; }
+  #quote-modal label { font-size: 10px !important; }
+  #quote-modal input, #quote-modal select { padding: 9px 12px !important; }
+  #quote-modal textarea { height: 46px !important; }
+  #quote-modal button[type="submit"] { padding: 12px 20px !important; }
+}
+/* narrowest phones: last squeeze, after the short-screen tier so it wins */
+@media (max-width: 340px) {
+  .modal-panel { padding: 14px 12px !important; }
+  #quote-modal form { gap: 7px !important; }
+  #quote-modal input, #quote-modal select { padding: 8px 11px !important; }
+  #quote-modal textarea { height: 42px !important; }
 }
 #quote-modal[hidden] { display: none; }
 [data-form-success][hidden] { display: none; }
