@@ -68,6 +68,13 @@ The quote modal and contact form are wired for GHL external form tracking:
 In the GHL sub-account, enable **Form Analytics** and **Form Submissions**
 in Settings for submissions to sync to contacts.
 
+## Analytics
+
+Google Analytics 4 (`G-7HGM7N8B83`) loads via the standard gtag.js snippet,
+placed high in the `<head>` of all nine pages so the pageview fires before the
+rest of the document. `/thank-you/` is included, so quote submissions can be
+tracked as a destination conversion on that path.
+
 The canonical domain is set to `https://www.cwslawnandgardencare.com.au` —
 update `BASE` references in the HTML head, `sitemap.xml` and `robots.txt` if
 the site is deployed to a different domain.
