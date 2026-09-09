@@ -1,0 +1,423 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/lato-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/lato-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/lato-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/lato-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/lato-700-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/lato-700-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/lato-900-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/lato-900-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/playfair-display-600-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/playfair-display-600-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/playfair-display-600-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/playfair-display-600-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/playfair-display-600-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/playfair-display-600-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/playfair-display-600-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/playfair-display-600-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/playfair-display-700-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/playfair-display-700-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/playfair-display-700-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/playfair-display-700-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/playfair-display-700-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/playfair-display-700-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/playfair-display-700-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/playfair-display-700-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/playfair-display-700-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/playfair-display-700-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/playfair-display-700-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/playfair-display-700-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #faf9f6; color: #1a2417; font-family: 'Lato', sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #3d5c38; text-decoration: none; }
+  a:hover { color: #8aaa78; }
+  summary { cursor: pointer; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  input, select, textarea, button { font-family: inherit; }
+  ::selection { background: #8aaa78; color: #16210f; }
+
+
+/* ---- responsive nav ---- */
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.nav-toggle span { display: block; width: 26px; height: 2px; background: #f0ede6; margin: 6px 0; transition: transform .25s ease, opacity .25s ease; }
+.nav-mobile-actions { display: none; align-items: center; gap: 10px; }
+/* quote CTA stays reachable in the header instead of hiding behind the menu */
+.nav-cta { background: #8aaa78; color: #16210f; border: none; padding: 11px 18px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 1.2px; text-transform: uppercase; cursor: pointer; }
+@media (max-width: 1080px) {
+  .nav-links { display: none !important; }
+  .nav-mobile-actions { display: flex; }
+  .nav-toggle { display: block; }
+  .nav-links.open { display: flex !important; position: absolute; top: 82px; left: 0; right: 0; flex-direction: column; align-items: stretch !important; gap: 0 !important; background: #22331f; padding: 12px 20px 22px; border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .nav-links.open > a, .nav-links.open > details { padding: 13px 4px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .nav-links.open details div { position: static !important; box-shadow: none !important; border: none !important; background: transparent !important; }
+  .nav-links.open > button, .nav-links.open > a[data-cta] { margin-top: 16px; }
+  body.nav-open { overflow: hidden; }
+}
+@media (max-width: 720px) {
+  h1 { font-size: 44px !important; }
+}
+/* ---- hero on small screens ----
+   The design's hero is sized for a desktop viewport; on a phone the tall
+   min-height, wide paragraph measure and mismatched buttons make it read as
+   clutter. Shrink the box, calm the copy and give the CTAs equal width. */
+@media (max-width: 620px) {
+  .hero { min-height: 0 !important; padding-bottom: 34px !important; }
+  .hero p { font-size: 16px !important; line-height: 1.6 !important; }
+  .hero-cta { gap: 10px !important; }
+  .hero-cta > a, .hero-cta > button {
+    flex: 1 1 100% !important; display: block !important;
+    text-align: center !important; padding-left: 16px !important; padding-right: 16px !important;
+  }
+  .trust-strip {
+    display: grid !important; grid-template-columns: 1fr 1fr !important;
+    gap: 10px 12px !important; justify-content: stretch !important;
+  }
+  .trust-strip > div { font-size: 10px !important; }
+}
+@media (max-width: 480px) {
+  h1 { font-size: 36px !important; }
+}
+
+/* ---- services dropdown ----
+   Opens on hover on pointer devices (JS toggles `open`); the panel's ::before
+   bridges the gap below the summary so the pointer never leaves the details
+   subtree on the way down. Click/tap still works for touch and keyboard. */
+nav details[data-services] > div::before {
+  content: ""; position: absolute; left: 0; right: 0; top: -20px; height: 20px;
+}
+nav details[data-services] > summary { cursor: pointer; }
+
+/* ---- quote modal ----
+   Never taller or wider than the viewport: the panel caps its height and
+   scrolls internally instead of pushing the page. */
+.modal-overlay { align-items: center !important; padding: clamp(10px, 2.5vw, 40px) !important; }
+.modal-panel {
+  max-width: min(660px, 100%) !important;
+  max-height: calc(100vh - clamp(20px, 5vw, 80px));
+  max-height: calc(100dvh - clamp(20px, 5vw, 80px));
+  overflow-y: auto; overscroll-behavior: contain;
+  padding: clamp(18px, 2.2vw, 28px) !important;
+}
+/* Compact enough to sit fully in view on a laptop without an inner scrollbar:
+   trimmed chrome, tighter field rhythm, and paired fields two-up. */
+#quote-modal h3 { font-size: clamp(21px, 2.1vw, 26px) !important; }
+.modal-panel > div:first-child { margin-bottom: 4px !important; }
+.modal-panel > p { font-size: 14px !important; line-height: 1.5 !important; margin: 0 0 14px !important; }
+#quote-modal [data-close-quote] { width: 34px !important; height: 34px !important; font-size: 16px !important; }
+#quote-modal form { gap: 11px !important; }
+#quote-modal form div:has(> label) { gap: 4px !important; }
+#quote-modal form > div:first-child { gap: 11px 14px !important; }
+#quote-modal label { font-size: 11px !important; letter-spacing: 1px !important; }
+#quote-modal input, #quote-modal select { padding: 10px 13px !important; font-size: 15px !important; }
+#quote-modal textarea { height: 56px !important; padding: 9px 13px !important; font-size: 15px !important; }
+#quote-modal button[type="submit"] { padding: 14px 24px !important; }
+#quote-modal form > p { font-size: 12px !important; margin: 2px 0 0 !important; }
+@media (min-width: 620px) {
+  /* two fields per row: name+phone, email+service, address+size */
+  #quote-modal form {
+    display: grid !important; grid-template-columns: 1fr 1fr !important;
+    gap: 11px 14px !important; align-items: start !important;
+  }
+  #quote-modal form > div:first-child,
+  #quote-modal form > div:has(textarea),
+  #quote-modal form > button,
+  #quote-modal form > p { grid-column: 1 / -1 !important; }
+}
+@media (max-width: 760px) {
+  /* keep inputs at 16px so iOS does not zoom the page on focus */
+  #quote-modal input, #quote-modal select, #quote-modal textarea {
+    font-size: 16px !important; padding: 11px 12px !important;
+  }
+  #quote-modal textarea { height: 60px !important; }
+}
+@media (max-width: 400px) {
+  /* squeeze the last ~45px so the whole form lands in view on a small phone */
+  .modal-panel { padding: 16px 14px !important; }
+  .modal-panel > p { font-size: 13px !important; margin: 0 0 10px !important; }
+  #quote-modal form { gap: 9px !important; }
+  #quote-modal input, #quote-modal select, #quote-modal textarea { padding: 10px 12px !important; }
+  #quote-modal textarea { height: 52px !important; }
+  #quote-modal button[type="submit"] { padding: 13px 20px !important; }
+}
+/* Short screens (small phones, phones in landscape) — drop the supporting
+   copy and tighten further so the fields themselves stay in view. Scoped by
+   width too, so a 720p desktop keeps the full layout. */
+@media (max-height: 720px) and (max-width: 900px) {
+  .modal-panel > p, #quote-modal form > p { display: none !important; }
+  .modal-panel > div:first-child { margin-bottom: 2px !important; }
+  #quote-modal h3 { font-size: 20px !important; }
+  #quote-modal form { gap: 8px !important; }
+  #quote-modal label { font-size: 10px !important; }
+  #quote-modal input, #quote-modal select { padding: 9px 12px !important; }
+  #quote-modal textarea { height: 46px !important; }
+  #quote-modal button[type="submit"] { padding: 12px 20px !important; }
+}
+/* narrowest phones: last squeeze, after the short-screen tier so it wins */
+@media (max-width: 340px) {
+  .modal-panel { padding: 14px 12px !important; }
+  #quote-modal form { gap: 7px !important; }
+  #quote-modal input, #quote-modal select { padding: 8px 11px !important; }
+  #quote-modal textarea { height: 42px !important; }
+}
+#quote-modal[hidden] { display: none; }
+[data-form-success][hidden] { display: none; }
+html { scroll-behavior: smooth; }
+img, iframe { max-width: 100%; }
+/* The width/height attributes (present to reserve space and avoid layout
+   shift) act as presentational hints, so an image whose CSS sets only a
+   width would take the raw pixel height and ignore aspect-ratio. Inline
+   heights from the design still win over this rule. */
+img { height: auto; }
+
+/* ---- mobile-first overrides ----
+   The design ships fixed desktop values in inline styles, so these need
+   !important to win. Fluid clamp() handles type and spacing at build time;
+   these rules fix layouts that can only collapse at a breakpoint. */
+@media (max-width: 760px) {
+  /* narrower gutters buy back ~16px of line length on a phone */
+  [style*="padding: 0 28px"] { padding-left: 20px !important; padding-right: 20px !important; }
+  /* fixed multi-column grids stack */
+  [style*="grid-template-columns: 1.4fr 1fr 1fr"],
+  [style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
+  /* wide tracking is hard to read at small sizes */
+  [style*="letter-spacing: 3.4px"] { letter-spacing: 2px !important; }
+  [style*="letter-spacing: 2.4px"],
+  [style*="letter-spacing: 2.2px"] { letter-spacing: 1.5px !important; }
+  /* cards and panels: trim the inner padding the design gives them */
+  [style*="padding: 44px"], [style*="padding: 42px"], [style*="padding: 40px"] { padding: 26px !important; }
+  [style*="padding: 56px 48px"] { padding: 30px 22px !important; }
+  [style*="padding: 72px 60px"] { padding: 34px 24px !important; }
+  /* maps and embeds */
+  iframe { height: 300px !important; }
+  /* keep the modal usable on a short screen */
+  .modal-overlay { padding: 12px !important; }
+  .modal-panel { padding: 22px 18px !important; }
+}
+@media (max-width: 420px) {
+  [style*="padding: 0 28px"] { padding-left: 16px !important; padding-right: 16px !important; }
+}
